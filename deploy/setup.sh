@@ -3,7 +3,7 @@
 set -e
 
 # TODO: Set to URL of git repo.
-PROJECT_GIT_URL='https://github.com/Mitch1802/Katplan_Backend.git'
+PROJECT_GIT_URL='https://github.com/Mitch1802/Katplan_Backend_Public.git'
 
 PROJECT_BASE_PATH='/usr/local/apps/katplan'
 
