@@ -1,0 +1,4770 @@
+[
+    {
+        "model": "core.modul",
+        "pk": 1,
+        "fields": {
+            "bezeichnung": "Katastrophen",
+            "kuerzel": "K",
+            "icon": "grid_4x4",
+            "reihenfolge": 1,
+            "permissions": [],
+            "lastUpdate": "2021-12-06T20:00:44.672Z"
+        }
+    },
+    {
+        "model": "core.modul",
+        "pk": 2,
+        "fields": {
+            "bezeichnung": "Gefahren",
+            "kuerzel": "G",
+            "icon": "warning",
+            "reihenfolge": 2,
+            "permissions": [],
+            "lastUpdate": "2021-12-06T20:01:03.857Z"
+        }
+    },
+    {
+        "model": "core.modul",
+        "pk": 3,
+        "fields": {
+            "bezeichnung": "Massnahmen",
+            "kuerzel": "M",
+            "icon": "construction",
+            "reihenfolge": 3,
+            "permissions": [],
+            "lastUpdate": "2021-12-06T20:01:39.699Z"
+        }
+    },
+    {
+        "model": "core.modul",
+        "pk": 4,
+        "fields": {
+            "bezeichnung": "Rollen",
+            "kuerzel": "R",
+            "icon": "distance",
+            "reihenfolge": 4,
+            "permissions": [],
+            "lastUpdate": "2021-12-06T20:01:57.403Z"
+        }
+    },
+    {
+        "model": "core.modul",
+        "pk": 5,
+        "fields": {
+            "bezeichnung": "Kontakte",
+            "kuerzel": "C",
+            "icon": "people",
+            "reihenfolge": 5,
+            "permissions": [],
+            "lastUpdate": "2021-12-06T20:02:44.033Z"
+        }
+    },
+    {
+        "model": "core.modul",
+        "pk": 6,
+        "fields": {
+            "bezeichnung": "Dokumente",
+            "kuerzel": "D",
+            "icon": "file",
+            "reihenfolge": 6,
+            "permissions": [],
+            "lastUpdate": "2021-12-06T20:03:04.706Z"
+        }
+    },
+    {
+        "model": "core.modul",
+        "pk": 7,
+        "fields": {
+            "bezeichnung": "Fahrzeuge",
+            "kuerzel": "F",
+            "icon": "lkw",
+            "reihenfolge": 7,
+            "permissions": [],
+            "lastUpdate": "2021-12-06T20:03:21.518Z"
+        }
+    },
+    {
+        "model": "core.modul",
+        "pk": 8,
+        "fields": {
+            "bezeichnung": "Verwaltung",
+            "kuerzel": "V",
+            "icon": "settings",
+            "reihenfolge": 9,
+            "permissions": [],
+            "lastUpdate": "2021-12-06T20:03:34.378Z"
+        }
+    },
+    {
+        "model": "core.modul",
+        "pk": 9,
+        "fields": {
+            "bezeichnung": "KMaterial",
+            "kuerzel": "KM",
+            "icon": "construction",
+            "reihenfolge": 8,
+            "permissions": [],
+            "lastUpdate": "2022-04-05T18:53:06.475Z"
+        }
+    },
+    {
+        "model": "core.katastrophe",
+        "pk": 1,
+        "fields": {
+            "kuerzel": "K01",
+            "name": "Radioaktive Verstrahlung",
+            "beschreibung": "Eine radioaktive Verstrahlung kann insbesondere durch Niederschlag, aber auch durch die Luft übertragen werden.  Es kann möglich sein, dass die Bevölkerung die Wohneinheiten über einen längeren Zeitraum nicht verlassen dürfen.",
+            "rollen": [],
+            "massnahmen": [],
+            "gefahren": [
+                {
+                    "kuerzel": "G201"
+                },
+                {
+                    "kuerzel": "G202"
+                },
+                {
+                    "kuerzel": "G205"
+                },
+                {
+                    "kuerzel": "G210"
+                },
+                {
+                    "kuerzel": "G212"
+                }
+            ],
+            "lastUpdate": "2021-12-06T20:10:31.179Z"
+        }
+    },
+    {
+        "model": "core.katastrophe",
+        "pk": 2,
+        "fields": {
+            "kuerzel": "K02",
+            "name": "Hochwasser",
+            "beschreibung": "Durch hohe Niederschlagsmengen kann es zu Überflutungen kommen. Anhand der HQ300 Karte sind betroffene Bereiche dargestellt.",
+            "rollen": [],
+            "massnahmen": [],
+            "gefahren": [
+                {
+                    "kuerzel": "G200"
+                },
+                {
+                    "kuerzel": "G201"
+                },
+                {
+                    "kuerzel": "G202"
+                },
+                {
+                    "kuerzel": "G203"
+                },
+                {
+                    "kuerzel": "G204"
+                },
+                {
+                    "kuerzel": "G207"
+                },
+                {
+                    "kuerzel": "G208"
+                },
+                {
+                    "kuerzel": "G211"
+                },
+                {
+                    "kuerzel": "G212"
+                }
+            ],
+            "lastUpdate": "2021-12-07T07:42:47.269Z"
+        }
+    },
+    {
+        "model": "core.katastrophe",
+        "pk": 3,
+        "fields": {
+            "kuerzel": "K03",
+            "name": "Sturm",
+            "beschreibung": "Durch ein Sturmereignis kommt es zu Schäden der Infrastruktur sowie zu Schäden an Gebäuden. Durch das Ereignis kann es sein, das viele Objekte unbewohnbar werden, bzw. aufgrund der fehlenden Infrastrukur nicht benützt werden können.",
+            "rollen": [],
+            "massnahmen": [],
+            "gefahren": [
+                {
+                    "kuerzel": "G200"
+                },
+                {
+                    "kuerzel": "G201"
+                },
+                {
+                    "kuerzel": "G203"
+                },
+                {
+                    "kuerzel": "G208"
+                },
+                {
+                    "kuerzel": "G210"
+                },
+                {
+                    "kuerzel": "G211"
+                },
+                {
+                    "kuerzel": "G212"
+                }
+            ],
+            "lastUpdate": "2021-12-07T07:42:59.513Z"
+        }
+    },
+    {
+        "model": "core.katastrophe",
+        "pk": 4,
+        "fields": {
+            "kuerzel": "K04",
+            "name": "Blackout",
+            "beschreibung": "Durch einen großflächigen Stromausfall welcher länger als 24 Stunden anhält, entstehen einige Gefahren.",
+            "rollen": [],
+            "massnahmen": [],
+            "gefahren": [
+                {
+                    "kuerzel": "G200"
+                },
+                {
+                    "kuerzel": "G201"
+                },
+                {
+                    "kuerzel": "G202"
+                },
+                {
+                    "kuerzel": "G203"
+                },
+                {
+                    "kuerzel": "G204"
+                },
+                {
+                    "kuerzel": "G205"
+                },
+                {
+                    "kuerzel": "G208"
+                },
+                {
+                    "kuerzel": "G212"
+                }
+            ],
+            "lastUpdate": "2021-12-07T07:43:11.529Z"
+        }
+    },
+    {
+        "model": "core.katastrophe",
+        "pk": 5,
+        "fields": {
+            "kuerzel": "K05",
+            "name": "Trinkwasserverseuchung",
+            "beschreibung": "Durch eine Verunreinigung des Grund- und Trinkwassers kommt es zu einigen Gefahren.",
+            "rollen": [],
+            "massnahmen": [],
+            "gefahren": [
+                {
+                    "kuerzel": "G201"
+                },
+                {
+                    "kuerzel": "G202"
+                },
+                {
+                    "kuerzel": "G212"
+                }
+            ],
+            "lastUpdate": "2021-12-07T07:44:11.945Z"
+        }
+    },
+    {
+        "model": "core.katastrophe",
+        "pk": 8,
+        "fields": {
+            "kuerzel": "K06",
+            "name": "Seuchenausbruch Menschen",
+            "beschreibung": "Durch eine Pandemie kommt es zu vielen schweren Erkrankungen in der Bevölkerung. Spitäler nehmen keine Patienten mehr auf. Ein Feldlazarett mit Triage ist notwendig. Bevölkerung darf den Haushalt nicht verlassen.",
+            "rollen": [],
+            "massnahmen": [],
+            "gefahren": [
+                {
+                    "kuerzel": "G200"
+                },
+                {
+                    "kuerzel": "G201"
+                },
+                {
+                    "kuerzel": "G210"
+                },
+                {
+                    "kuerzel": "G212"
+                }
+            ],
+            "lastUpdate": "2021-12-08T20:18:10.802Z"
+        }
+    },
+    {
+        "model": "core.katastrophe",
+        "pk": 9,
+        "fields": {
+            "kuerzel": "K07",
+            "name": "Seuchenausbruch Tiere",
+            "beschreibung": "Durch eine Tierkrankheit kommt es zu einem großen Ausmaß an kranken Tieren. Möglichweiser mit einer Ansteckungsgefahr für Menschen. Notschalchtungen, Entsorgung von Tierkadavarn, in Bereichen der Haushalte oder auch in der Natur können die Folge sein. Großflächige Dekontaminationsmaßnahmen womöglich erforderlich.",
+            "rollen": [],
+            "massnahmen": [],
+            "gefahren": [
+                {
+                    "kuerzel": "G209"
+                },
+                {
+                    "kuerzel": "G212"
+                }
+            ],
+            "lastUpdate": "2021-12-08T20:21:24.871Z"
+        }
+    },
+    {
+        "model": "core.katastrophe",
+        "pk": 10,
+        "fields": {
+            "kuerzel": "K08",
+            "name": "Flugzeugabsturz im verbauten Gebiet",
+            "beschreibung": "Durch einen Flugzeugabsturz im verbauten Gebiet, kommt es zu sehr großen Personen- und Infrastrukturschäden. Die Folgen können Großbrände, Eingestürzte bzw. schwer Beschädigte Objekte, zerstörte Verkehrs- und Energiewege.",
+            "rollen": [
+                {
+                    "kuerzel": "R109"
+                }
+            ],
+            "massnahmen": [],
+            "gefahren": [
+                {
+                    "kuerzel": "G200"
+                },
+                {
+                    "kuerzel": "G201"
+                },
+                {
+                    "kuerzel": "G203"
+                },
+                {
+                    "kuerzel": "G210"
+                },
+                {
+                    "kuerzel": "G211"
+                }
+            ],
+            "lastUpdate": "2021-12-08T20:23:50.145Z"
+        }
+    },
+    {
+        "model": "core.katastrophe",
+        "pk": 11,
+        "fields": {
+            "kuerzel": "K09",
+            "name": "Flugzeugabsturz im nicht verbauten Gebiet",
+            "beschreibung": "Flugzeugabsturz in nicht verbautem Gebiet. Große Flächen- oder Waldbrände. Große Anzahl von Verletzten und Toten. Pressezentrum erforderlich. Trümmerhalle kurzfristig für Sichergestelltes Material.",
+            "rollen": [
+                {
+                    "kuerzel": "R109"
+                }
+            ],
+            "massnahmen": [],
+            "gefahren": [
+                {
+                    "kuerzel": "G203"
+                },
+                {
+                    "kuerzel": "G210"
+                },
+                {
+                    "kuerzel": "G211"
+                }
+            ],
+            "lastUpdate": "2021-12-08T20:25:36.446Z"
+        }
+    },
+    {
+        "model": "core.katastrophe",
+        "pk": 12,
+        "fields": {
+            "kuerzel": "K10",
+            "name": "Erdbeben",
+            "beschreibung": "Je nach stärke des Erbebens kann es zu schweren Schäden an Gebäuden und Infrastruktur kommen. Eine Vielzahl an Verletzten und Toten können auftreten. Anhand von Plänen und Rückmeldungen durch die Einsatzkräfte sind die Personen- , Gebäude- und Infrastrukturschäden aufzunehmen und darzustellen. Aus diesen Ergebnis der Erkundung werden die weiteren Gefahren und Maßnahmen abgeleitet.",
+            "rollen": [],
+            "massnahmen": [],
+            "gefahren": [
+                {
+                    "kuerzel": "G200"
+                },
+                {
+                    "kuerzel": "G201"
+                },
+                {
+                    "kuerzel": "G202"
+                },
+                {
+                    "kuerzel": "G203"
+                },
+                {
+                    "kuerzel": "G204"
+                },
+                {
+                    "kuerzel": "G207"
+                },
+                {
+                    "kuerzel": "G208"
+                },
+                {
+                    "kuerzel": "G209"
+                },
+                {
+                    "kuerzel": "G210"
+                },
+                {
+                    "kuerzel": "G211"
+                },
+                {
+                    "kuerzel": "G212"
+                }
+            ],
+            "lastUpdate": "2021-12-08T20:28:23.685Z"
+        }
+    },
+    {
+        "model": "core.katastrophe",
+        "pk": 13,
+        "fields": {
+            "kuerzel": "K11",
+            "name": "Isolierung Schneefall",
+            "beschreibung": "Infolge von starken Schneefällen kommt es zu einer Isolierung der Ortschaft. Durch die Isolierung können mehrere Gefahren auftreten und Maßnahmen notwendig werden.",
+            "rollen": [],
+            "massnahmen": [],
+            "gefahren": [
+                {
+                    "kuerzel": "G200"
+                },
+                {
+                    "kuerzel": "G201"
+                },
+                {
+                    "kuerzel": "G203"
+                },
+                {
+                    "kuerzel": "G205"
+                },
+                {
+                    "kuerzel": "G206"
+                },
+                {
+                    "kuerzel": "G208"
+                },
+                {
+                    "kuerzel": "G211"
+                },
+                {
+                    "kuerzel": "G212"
+                }
+            ],
+            "lastUpdate": "2021-12-08T20:29:38.396Z"
+        }
+    },
+    {
+        "model": "core.katastrophe",
+        "pk": 14,
+        "fields": {
+            "kuerzel": "K12",
+            "name": "Chemieunfall",
+            "beschreibung": "Durch einen Chemieunfall auf der Strasse/Schiene oder durch einen Zwischenfall in einem örtlichen Betrieb kann es schwerwiegende Folgen für die Umgebung, Ortsteile bzw. den ganzen Ort geben.",
+            "rollen": [],
+            "massnahmen": [],
+            "gefahren": [
+                {
+                    "kuerzel": "G200"
+                },
+                {
+                    "kuerzel": "G201"
+                },
+                {
+                    "kuerzel": "G202"
+                },
+                {
+                    "kuerzel": "G210"
+                },
+                {
+                    "kuerzel": "G211"
+                },
+                {
+                    "kuerzel": "G212"
+                }
+            ],
+            "lastUpdate": "2021-12-08T20:32:09.059Z"
+        }
+    },
+    {
+        "model": "core.katastrophe",
+        "pk": 15,
+        "fields": {
+            "kuerzel": "K13",
+            "name": "Terroranschlag",
+            "beschreibung": "Durch einen Terroranschlag kann es...",
+            "rollen": [],
+            "massnahmen": [],
+            "gefahren": [
+                {
+                    "kuerzel": "G200"
+                },
+                {
+                    "kuerzel": "G201"
+                },
+                {
+                    "kuerzel": "G208"
+                },
+                {
+                    "kuerzel": "G210"
+                },
+                {
+                    "kuerzel": "G212"
+                }
+            ],
+            "lastUpdate": "2021-12-08T20:32:53.632Z"
+        }
+    },
+    {
+        "model": "core.gefahr",
+        "pk": 1,
+        "fields": {
+            "kuerzel": "G200",
+            "name": "Notunterkunft für Bevölkerung",
+            "beschreibung": "Aufgrund eines Ereignisses ist eine Notunterkunft für die Bevölkerung notwendig.",
+            "ausloeser": "Brand (Unbenützbarkeit), Unwetter (Sturm, Wasser), Erdbeben, Ausfall Strom, Ausfall Heizung, Explosion.",
+            "feld1Name": "Stufe 1: 1-2 Familien (unter 10 Personen)",
+            "feld1Value": "Ersatzwohnungen: (füllen mit Leerstehenden Wohnungen, Häusern, Hotel im Ort)",
+            "feld2Name": "Stufe 2: ca. 20 Personen",
+            "feld2Value": "Örtliche Beherbergungsbetriebe: Notschlafstellen in Gemeindeeinrichtungen auflisten",
+            "feld3Name": "Stufe 3: mehr als 20 Personen",
+            "feld3Value": "Örtliche Beherbergungsbetriebe, Notschlafstellen in Gemeindeeinrichtungen, externe Einrichtungen (Verbringung)",
+            "feld4Name": "Entscheidungsfrage:",
+            "feld4Value": "Kurz- oder langfristige Verlegung?",
+            "feld5Name": "",
+            "feld5Value": "",
+            "folgen": "Notversorgung mit Nahrung, Kleidung, Dokumenten",
+            "gefahren": "Plünderungen, Gefahr durch unbeobachtete Infrastruktur (Stromabschaltungen veranlassen), Verlust Wertgegenstände/Dokumente",
+            "rollen": [
+                {
+                    "kuerzel": "R100"
+                },
+                {
+                    "kuerzel": "R101"
+                },
+                {
+                    "kuerzel": "R102"
+                },
+                {
+                    "kuerzel": "R103"
+                },
+                {
+                    "kuerzel": "R104"
+                },
+                {
+                    "kuerzel": "R105"
+                },
+                {
+                    "kuerzel": "R110"
+                },
+                {
+                    "kuerzel": "R111"
+                },
+                {
+                    "kuerzel": "R112"
+                },
+                {
+                    "kuerzel": "R114"
+                },
+                {
+                    "kuerzel": "R117"
+                },
+                {
+                    "kuerzel": "R119"
+                },
+                {
+                    "kuerzel": "R121"
+                },
+                {
+                    "kuerzel": "R122"
+                }
+            ],
+            "massnahmen": [
+                {
+                    "kuerzel": "M300"
+                },
+                {
+                    "kuerzel": "M302"
+                },
+                {
+                    "kuerzel": "M303"
+                },
+                {
+                    "kuerzel": "M304"
+                },
+                {
+                    "kuerzel": "M305"
+                },
+                {
+                    "kuerzel": "M321"
+                },
+                {
+                    "kuerzel": "M322"
+                },
+                {
+                    "kuerzel": "M323"
+                },
+                {
+                    "kuerzel": "M324"
+                },
+                {
+                    "kuerzel": "M325"
+                },
+                {
+                    "kuerzel": "M335"
+                }
+            ],
+            "dokumente": [],
+            "lastUpdate": "2021-12-06T20:12:33.178Z"
+        }
+    },
+    {
+        "model": "core.gefahr",
+        "pk": 2,
+        "fields": {
+            "kuerzel": "G201",
+            "name": "Notversorgung für Bevölkerung (Essen/Getränke)",
+            "beschreibung": "Es besteht keine Möglichkeit der Eigenversorgung mit Nahrung",
+            "ausloeser": "Verlust Eigenheim, Ausfall Versorgung, Ausfall Energie, Keine Kochmöglichkeit, Grundwasserverunreinigung",
+            "feld1Name": "Stufe 1: Ess- und Nahrungspakete für Haushalte",
+            "feld1Value": "Var. a: Esspakete werden erstellt und ausgeliefert. Var. b: Esspakete werden erstellt und zentral ausgegeben. (Achtung - inmobile Betroffene beachten! )",
+            "feld2Name": "Stufe 2: Zentrale Essensausgabe über Feldküche",
+            "feld2Value": "Essensausgabe und Einnahme an einem zentralen Punkt - Auslieferung an inmobile Bevölkerung",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "folgen": "Über längeren Zeitraum: Genaue Rationenplanung (Melderegister)",
+            "gefahren": "Allergien und Unverträglichkeiten, Zugangskontrollen können erforderlich sein.",
+            "rollen": [
+                {
+                    "kuerzel": "R100"
+                },
+                {
+                    "kuerzel": "R101"
+                },
+                {
+                    "kuerzel": "R102"
+                },
+                {
+                    "kuerzel": "R103"
+                },
+                {
+                    "kuerzel": "R104"
+                },
+                {
+                    "kuerzel": "R110"
+                },
+                {
+                    "kuerzel": "R111"
+                },
+                {
+                    "kuerzel": "R114"
+                },
+                {
+                    "kuerzel": "R117"
+                }
+            ],
+            "massnahmen": [
+                {
+                    "kuerzel": "M300"
+                },
+                {
+                    "kuerzel": "M302"
+                },
+                {
+                    "kuerzel": "M303"
+                },
+                {
+                    "kuerzel": "M304"
+                },
+                {
+                    "kuerzel": "M305"
+                },
+                {
+                    "kuerzel": "M312"
+                },
+                {
+                    "kuerzel": "M313"
+                },
+                {
+                    "kuerzel": "M314"
+                },
+                {
+                    "kuerzel": "M328"
+                },
+                {
+                    "kuerzel": "M329"
+                }
+            ],
+            "dokumente": [],
+            "lastUpdate": "2021-12-07T07:46:28.627Z"
+        }
+    },
+    {
+        "model": "core.gefahr",
+        "pk": 3,
+        "fields": {
+            "kuerzel": "G202",
+            "name": "Ausfall Trink- und Nutzwasser",
+            "beschreibung": "Durch ein Ereignis muss der gesamte Ort oder Ortsteile bzw. Objekte mit Nutzwasser versorgt werden.",
+            "ausloeser": "Leitungsbruch, Verunreinigung",
+            "feld1Name": "Versorgung der Haushalte (mobil)",
+            "feld1Value": "Zeitplan für die Wasserlieferung erstellen. Mit Feuerwehrfahrzeugen wird Nutzwasser gebracht. Trinkwasser ausschließlich in Wasserflaschen (PET) bereitstellen. Tagesbedarf berechnen und organisieren.",
+            "feld2Name": "Versorgung zentral (Waschmöglichkeit)",
+            "feld2Value": "Aufstellen von mobilen Wassertanks. Errichten einer Notdusche (M/W).",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "folgen": "Gesundheitliche Beeinträchtigung (Hygiene, Keime,...)",
+            "gefahren": "",
+            "rollen": [
+                {
+                    "kuerzel": "R100"
+                },
+                {
+                    "kuerzel": "R101"
+                },
+                {
+                    "kuerzel": "R102"
+                },
+                {
+                    "kuerzel": "R103"
+                },
+                {
+                    "kuerzel": "R107"
+                },
+                {
+                    "kuerzel": "R110"
+                },
+                {
+                    "kuerzel": "R113"
+                },
+                {
+                    "kuerzel": "R117"
+                }
+            ],
+            "massnahmen": [
+                {
+                    "kuerzel": "M305"
+                },
+                {
+                    "kuerzel": "M306"
+                },
+                {
+                    "kuerzel": "M307"
+                },
+                {
+                    "kuerzel": "M326"
+                },
+                {
+                    "kuerzel": "M335"
+                },
+                {
+                    "kuerzel": "M336"
+                }
+            ],
+            "dokumente": [],
+            "lastUpdate": "2021-12-07T07:49:29.211Z"
+        }
+    },
+    {
+        "model": "core.gefahr",
+        "pk": 4,
+        "fields": {
+            "kuerzel": "G203",
+            "name": "Ausfall Strom",
+            "beschreibung": "Ort oder Ortsteile stromlos",
+            "ausloeser": "Blackout, Erdbeben, Explosion, Brand;",
+            "feld1Name": "Teilbereichsaufall:",
+            "feld1Value": "mobile Lichtpunkte, mobile Ladepunkte (Zeitplan erstellen)",
+            "feld2Name": "Gesamtausfall:",
+            "feld2Value": "Mobile Lichtpunkte, mobile Ladepunkte (Zeitplan)",
+            "feld3Name": "Entscheidungspunkt:",
+            "feld3Value": "Dauer des Stromausfalles - länger als 24h Maßnahmen empfohlen.",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "folgen": "Längerer Zeitraum: Ausfall Heizung und Warmwasser, kein Kochmöglichkeit.",
+            "gefahren": "Notversorgung und Notunterkunft erforderlich",
+            "rollen": [
+                {
+                    "kuerzel": "R100"
+                },
+                {
+                    "kuerzel": "R101"
+                },
+                {
+                    "kuerzel": "R102"
+                },
+                {
+                    "kuerzel": "R103"
+                },
+                {
+                    "kuerzel": "R106"
+                },
+                {
+                    "kuerzel": "R110"
+                },
+                {
+                    "kuerzel": "R116"
+                },
+                {
+                    "kuerzel": "R117"
+                }
+            ],
+            "massnahmen": [
+                {
+                    "kuerzel": "M305"
+                },
+                {
+                    "kuerzel": "M308"
+                },
+                {
+                    "kuerzel": "M309"
+                },
+                {
+                    "kuerzel": "M310"
+                },
+                {
+                    "kuerzel": "M311"
+                },
+                {
+                    "kuerzel": "M336"
+                }
+            ],
+            "dokumente": [],
+            "lastUpdate": "2021-12-07T07:51:04.563Z"
+        }
+    },
+    {
+        "model": "core.gefahr",
+        "pk": 5,
+        "fields": {
+            "kuerzel": "G204",
+            "name": "Ausfall Gas",
+            "beschreibung": "Ausfall der Gasversorgung",
+            "ausloeser": "Erdbeben, Gebrechen, Versorgungsengpass",
+            "feld1Name": "Keine Heizmöglichkeit:",
+            "feld1Value": "Beheizte Notunterkunft erforderlich (Erhebung wieviele Haushalte Gasversorgt!)",
+            "feld2Name": "Kein Warmwasser:",
+            "feld2Value": "Duschmöglichkeit in funktionierenden Einrichtungen: Hallenbad, Schulen,",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "folgen": "Notversorgung und Notunterkunft möglicherweise erforderlich",
+            "gefahren": "",
+            "rollen": [
+                {
+                    "kuerzel": "R100"
+                },
+                {
+                    "kuerzel": "R101"
+                },
+                {
+                    "kuerzel": "R102"
+                },
+                {
+                    "kuerzel": "R108"
+                },
+                {
+                    "kuerzel": "R110"
+                },
+                {
+                    "kuerzel": "R116"
+                }
+            ],
+            "massnahmen": [],
+            "dokumente": [],
+            "lastUpdate": "2021-12-07T08:16:58.449Z"
+        }
+    },
+    {
+        "model": "core.gefahr",
+        "pk": 6,
+        "fields": {
+            "kuerzel": "G205",
+            "name": "Ausfall Nahrungsversorgung",
+            "beschreibung": "Durch Isolation oder Versorgungsengpass ist keine Nahversorgung möglich.",
+            "ausloeser": "Schnee, Ausfall von Verbindungen, Ausfall Transporteure, Versorgungsengpass",
+            "feld1Name": "Übernahme der Logistikaufgaben:",
+            "feld1Value": "Kommissionierung, Rationenerstellung, Sammlung von vorhandenen Vorräten für die Rationenerstellung",
+            "feld2Name": "Entscheidungspunkt:",
+            "feld2Value": "Dauer des Ausfalles.",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "folgen": "Notversorgung der Bevölkerung",
+            "gefahren": "Plünderungen (Lager über- bzw. bewachen, Standort nicht veröffentlichen)",
+            "rollen": [
+                {
+                    "kuerzel": "R100"
+                },
+                {
+                    "kuerzel": "R101"
+                },
+                {
+                    "kuerzel": "R102"
+                },
+                {
+                    "kuerzel": "R103"
+                },
+                {
+                    "kuerzel": "R110"
+                },
+                {
+                    "kuerzel": "R111"
+                },
+                {
+                    "kuerzel": "R114"
+                }
+            ],
+            "massnahmen": [
+                {
+                    "kuerzel": "M300"
+                },
+                {
+                    "kuerzel": "M301"
+                },
+                {
+                    "kuerzel": "M302"
+                },
+                {
+                    "kuerzel": "M303"
+                },
+                {
+                    "kuerzel": "M304"
+                },
+                {
+                    "kuerzel": "M305"
+                },
+                {
+                    "kuerzel": "M312"
+                },
+                {
+                    "kuerzel": "M313"
+                },
+                {
+                    "kuerzel": "M314"
+                },
+                {
+                    "kuerzel": "M328"
+                },
+                {
+                    "kuerzel": "M329"
+                }
+            ],
+            "dokumente": [],
+            "lastUpdate": "2021-12-07T08:17:21.972Z"
+        }
+    },
+    {
+        "model": "core.gefahr",
+        "pk": 7,
+        "fields": {
+            "kuerzel": "G206",
+            "name": "Ausfall Müllentsorgung",
+            "beschreibung": "Ausfall der Abfallentsorgung - Grundsätzlich gedeckt durch Notfallplan der Entsorger.",
+            "ausloeser": "Isolation, Streik.",
+            "feld1Name": "Abtransport in Gemeinderegie:",
+            "feld1Value": "Zwischenlager definieren, Abbrandplatz definieren.",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "folgen": "Seuchengefahr, Rattenplage.",
+            "gefahren": "",
+            "rollen": [
+                {
+                    "kuerzel": "R100"
+                },
+                {
+                    "kuerzel": "R101"
+                },
+                {
+                    "kuerzel": "R102"
+                },
+                {
+                    "kuerzel": "R110"
+                },
+                {
+                    "kuerzel": "R117"
+                }
+            ],
+            "massnahmen": [
+                {
+                    "kuerzel": "M305"
+                },
+                {
+                    "kuerzel": "M336"
+                }
+            ],
+            "dokumente": [],
+            "lastUpdate": "2021-12-07T08:17:37.240Z"
+        }
+    },
+    {
+        "model": "core.gefahr",
+        "pk": 8,
+        "fields": {
+            "kuerzel": "G207",
+            "name": "Ausfall Fäkalienkanal",
+            "beschreibung": "Ausfall des Abwasserkanals.",
+            "ausloeser": "Erdbeben, Explosion, Blackout;",
+            "feld1Name": "Teilbereich:",
+            "feld1Value": "Einsatzsaugwagen in Kombination mit Auffangtanks",
+            "feld2Name": "Pumpwerkausfall:",
+            "feld2Value": "Überlauf aktivieren",
+            "feld3Name": "Gesamtausfall:",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "folgen": "Gewässer- und Bodenverunreinigung",
+            "gefahren": "Überflutung von Bereichen mit Abwasser, Seuchen- und Gesundheitsgefahr für Menschen",
+            "rollen": [
+                {
+                    "kuerzel": "R100"
+                },
+                {
+                    "kuerzel": "R101"
+                },
+                {
+                    "kuerzel": "R102"
+                },
+                {
+                    "kuerzel": "R110"
+                },
+                {
+                    "kuerzel": "R116"
+                },
+                {
+                    "kuerzel": "R117"
+                }
+            ],
+            "massnahmen": [
+                {
+                    "kuerzel": "M305"
+                },
+                {
+                    "kuerzel": "M331"
+                },
+                {
+                    "kuerzel": "M336"
+                }
+            ],
+            "dokumente": [],
+            "lastUpdate": "2021-12-07T08:17:56.658Z"
+        }
+    },
+    {
+        "model": "core.gefahr",
+        "pk": 9,
+        "fields": {
+            "kuerzel": "G208",
+            "name": "Ausfall Kommunikation",
+            "beschreibung": "Ausfall der Kommunikation (Telefon, Internet). Ausfall Notrufnummern.",
+            "ausloeser": "Blackout, Erdbeben,",
+            "feld1Name": "Informationsweitergabe mobil:",
+            "feld1Value": "Lautsprecher durchsagen, Postwurfsendungen;",
+            "feld2Name": "Informationsweitergabe statisch:",
+            "feld2Value": "Informationspunkte definieren in Grätzel.",
+            "feld3Name": "Informationssammelzentrum:",
+            "feld3Value": "FF Haus / Gemeindeamt besetzen mit Funkgeräten (Verbindungsoffiziere RK/FF einberufen)",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "folgen": "Keine Notfallmeldung möglich. Meldepunkte einrichten (Schnittstelle RK/FF schaffen)",
+            "gefahren": "Ungemeldete Gefahren, z.B. Brandfortschritt, verzögerter Rettungseinsatz",
+            "rollen": [
+                {
+                    "kuerzel": "R100"
+                },
+                {
+                    "kuerzel": "R101"
+                },
+                {
+                    "kuerzel": "R102"
+                },
+                {
+                    "kuerzel": "R103"
+                },
+                {
+                    "kuerzel": "R104"
+                },
+                {
+                    "kuerzel": "R105"
+                },
+                {
+                    "kuerzel": "R110"
+                },
+                {
+                    "kuerzel": "R117"
+                }
+            ],
+            "massnahmen": [
+                {
+                    "kuerzel": "M300"
+                },
+                {
+                    "kuerzel": "M303"
+                },
+                {
+                    "kuerzel": "M304"
+                },
+                {
+                    "kuerzel": "M305"
+                },
+                {
+                    "kuerzel": "M336"
+                }
+            ],
+            "dokumente": [],
+            "lastUpdate": "2021-12-07T08:18:22.909Z"
+        }
+    },
+    {
+        "model": "core.gefahr",
+        "pk": 10,
+        "fields": {
+            "kuerzel": "G209",
+            "name": "Massenanfall Tierkadaver",
+            "beschreibung": "Infolge einer Tierseuche kommt es zu einen Massenanfall von Tierkadavern.",
+            "ausloeser": "Tierseuche, Vergiftung;",
+            "feld1Name": "Kleintiere:",
+            "feld1Value": "",
+            "feld2Name": "Großtiere:",
+            "feld2Value": "",
+            "feld3Name": "Geflügel:",
+            "feld3Value": "",
+            "feld4Name": "Abbrandplatz:",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "folgen": "Geruchsbelästigung, Dekontamination erforderlich.",
+            "gefahren": "Seuchen- und Gesundheitsgefahr für Mensch und Tier.",
+            "rollen": [
+                {
+                    "kuerzel": "R100"
+                },
+                {
+                    "kuerzel": "R101"
+                },
+                {
+                    "kuerzel": "R103"
+                },
+                {
+                    "kuerzel": "R110"
+                }
+            ],
+            "massnahmen": [
+                {
+                    "kuerzel": "M300"
+                },
+                {
+                    "kuerzel": "M302"
+                },
+                {
+                    "kuerzel": "M303"
+                },
+                {
+                    "kuerzel": "M304"
+                },
+                {
+                    "kuerzel": "M317"
+                },
+                {
+                    "kuerzel": "M318"
+                }
+            ],
+            "dokumente": [],
+            "lastUpdate": "2021-12-07T08:19:06.471Z"
+        }
+    },
+    {
+        "model": "core.gefahr",
+        "pk": 11,
+        "fields": {
+            "kuerzel": "G210",
+            "name": "Massenanfall Leichen",
+            "beschreibung": "Durch ein Ereignis kommt es zu einem Massenanfall von Leichen.",
+            "ausloeser": "Erdbeben, Explosion, Brand, Flugzeugabsturz, Vergiftung, Seuche;",
+            "feld1Name": "Abholdung durch Bestattung, FF, Bauhof:",
+            "feld1Value": "Verbringung an Zwischenlagerplätze.",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "folgen": "Dekontamination erforderlich",
+            "gefahren": "Seuchengefahr, Plünderungen;",
+            "rollen": [
+                {
+                    "kuerzel": "R100"
+                },
+                {
+                    "kuerzel": "R101"
+                },
+                {
+                    "kuerzel": "R102"
+                },
+                {
+                    "kuerzel": "R103"
+                },
+                {
+                    "kuerzel": "R104"
+                },
+                {
+                    "kuerzel": "R105"
+                },
+                {
+                    "kuerzel": "R110"
+                },
+                {
+                    "kuerzel": "R113"
+                }
+            ],
+            "massnahmen": [
+                {
+                    "kuerzel": "M300"
+                },
+                {
+                    "kuerzel": "M302"
+                },
+                {
+                    "kuerzel": "M303"
+                },
+                {
+                    "kuerzel": "M304"
+                },
+                {
+                    "kuerzel": "M319"
+                },
+                {
+                    "kuerzel": "M320"
+                }
+            ],
+            "dokumente": [],
+            "lastUpdate": "2021-12-07T08:19:28.550Z"
+        }
+    },
+    {
+        "model": "core.gefahr",
+        "pk": 12,
+        "fields": {
+            "kuerzel": "G211",
+            "name": "Ausfall Verkehrsverbindungen (Straße/Wege)",
+            "beschreibung": "Durch ein Ereignis stehen wichtige Verbindungen nicht mehr zur Verfügung.",
+            "ausloeser": "Erdbeben, Hochwasser, Schnee, Explosion.",
+            "feld1Name": "Unerreichbarkeit von Ortsteilen:",
+            "feld1Value": "Errichten von Ersatzwegen.",
+            "feld2Name": "Unerreichbarkeit des Ortes:",
+            "feld2Value": "Luftbrücke (BH, BMI)",
+            "feld3Name": "Umleitungsgestaltung (Erkundung notwendig)",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "folgen": "Versorgungsengpässe, Notunterkunft, Evakuierung.",
+            "gefahren": "Panik.",
+            "rollen": [
+                {
+                    "kuerzel": "R100"
+                },
+                {
+                    "kuerzel": "R101"
+                },
+                {
+                    "kuerzel": "R102"
+                },
+                {
+                    "kuerzel": "R103"
+                },
+                {
+                    "kuerzel": "R104"
+                },
+                {
+                    "kuerzel": "R105"
+                },
+                {
+                    "kuerzel": "R110"
+                },
+                {
+                    "kuerzel": "R117"
+                },
+                {
+                    "kuerzel": "R119"
+                }
+            ],
+            "massnahmen": [
+                {
+                    "kuerzel": "M303"
+                },
+                {
+                    "kuerzel": "M332"
+                },
+                {
+                    "kuerzel": "M334"
+                },
+                {
+                    "kuerzel": "M336"
+                }
+            ],
+            "dokumente": [],
+            "lastUpdate": "2021-12-07T08:19:50.779Z"
+        }
+    },
+    {
+        "model": "core.gefahr",
+        "pk": 13,
+        "fields": {
+            "kuerzel": "G212",
+            "name": "Warnung und Information der Bevölkerung",
+            "beschreibung": "Je nach Schadenslage kommen unterschiedliche Maßnahmen zur Anwendung. \nAkutgefährdung: Zivilschutzalarm",
+            "ausloeser": "Verschiedene Katastrophenszenarien",
+            "feld1Name": "",
+            "feld1Value": "",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "folgen": "Viele Rückfragen in Form von Anrufen, Mails oder persönliche Vorsprache. Vorbereitungen (Hotline einrichten, bzw. Personal VORHER instruieren)",
+            "gefahren": "Panik, Plünderungen,",
+            "rollen": [
+                {
+                    "kuerzel": "R100"
+                },
+                {
+                    "kuerzel": "R101"
+                },
+                {
+                    "kuerzel": "R102"
+                },
+                {
+                    "kuerzel": "R103"
+                },
+                {
+                    "kuerzel": "R104"
+                },
+                {
+                    "kuerzel": "R105"
+                }
+            ],
+            "massnahmen": [
+                {
+                    "kuerzel": "M336"
+                },
+                {
+                    "kuerzel": "M337"
+                },
+                {
+                    "kuerzel": "M338"
+                },
+                {
+                    "kuerzel": "M339"
+                },
+                {
+                    "kuerzel": "M340"
+                },
+                {
+                    "kuerzel": "M341"
+                }
+            ],
+            "dokumente": [],
+            "lastUpdate": "2022-01-27T21:37:52.411Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 1,
+        "fields": {
+            "kuerzel": "M300",
+            "name": "Logistiktransport Bauhof",
+            "beschreibung": "Mit den Fahrzeugen und Anhänger des Wirtschaftshofes, können verschiedene Logistiktransporte durchgeführt werden.\n\nRelevant ist ob das zu transportierende Material wettergeschützt oder offen transportiert werden kann.",
+            "kategorie": "G",
+            "verantwortung": "Leiter Bauhof",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1000"
+                },
+                {
+                    "kuerzel": "C1002"
+                },
+                {
+                    "kuerzel": "C1016"
+                }
+            ],
+            "staerke": 10,
+            "fahrzeuge": [
+                {
+                    "kuerzel": "F2008"
+                },
+                {
+                    "kuerzel": "F2009"
+                },
+                {
+                    "kuerzel": "F2010"
+                },
+                {
+                    "kuerzel": "F2014"
+                },
+                {
+                    "kuerzel": "F2018"
+                }
+            ],
+            "feld1Name": "",
+            "feld1Value": "",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Je nach Auftrag wird vom diensthabenden Wirtschaftshofleiter die erforderlichen Fahrzeuge und Besatzungen entsandt. \n\nRückmeldung nach Auftragserledigung an den Stab - Meldekopf",
+            "rueckbau": "Reinigung - Dekontamination - Betankung\n\nRückmeldung der Einsatzbereitschaft an den Stab - Meldekopf.",
+            "lastUpdate": "2021-12-06T20:15:07.840Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 2,
+        "fields": {
+            "kuerzel": "M301",
+            "name": "Logistiktransport Extern",
+            "beschreibung": "Mit den angeführten Transportfirmen, können verschiedene Logistiktransporte durchgeführt werden.\n\nRelevant ist ob das zu transportierende Material wettergeschützt oder offen transportiert werden kann.",
+            "kategorie": "",
+            "verantwortung": "Meldekopf - Stab",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1002"
+                },
+                {
+                    "kuerzel": "C1016"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Logistikfirma 1: AWS Schwadorf",
+            "feld1Value": "Erreichbarkeit: Hr. Nemeth (0676/6016453)",
+            "feld2Name": "Logistikfirma 2: Fa. Lengel (Container, Sattelzug, Ladekran, Radlader)",
+            "feld2Value": "Erreichbarkeit: Hr. Stefan Lengel (0699/15158800)",
+            "feld3Name": "Logistikfirma 3: Fa. Propangas",
+            "feld3Value": "Erreichbarkeit:",
+            "feld4Name": "Logistikfirma 4: Fa. Blaha (Schotter)",
+            "feld4Value": "Erreichbarkeit:",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Verständigung der externen Firmen. \nAusgabe des Auftrages (schriftlich)\nErreichbarkeiten austauschen\nWenn notwendig Lotsen oder Verbindungsmann beistellen\nDokumentation der Einsatzzeiten der externen Firmen. \n\nRückmeldung an den Stab bei Auftragserledigung.",
+            "rueckbau": "Reinigung - Dekontamination - Betankung \n\nDokumentation Arbeitsende.\n\nRückmeldung an den Stab - Meldekopf.",
+            "lastUpdate": "2021-12-07T20:22:47.008Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 3,
+        "fields": {
+            "kuerzel": "M302",
+            "name": "Logistiktransport FF",
+            "beschreibung": "Mit den angeführten Fahrzeugen, können verschiedene Logistiktransporte durchgeführt werden.\n\nRelevant ist ob das zu transportierende Material wettergeschützt oder offen transportiert werden kann.",
+            "kategorie": "",
+            "verantwortung": "Einsatzleiter Feuerwehr",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1001"
+                },
+                {
+                    "kuerzel": "C1003"
+                }
+            ],
+            "staerke": 10,
+            "fahrzeuge": [
+                {
+                    "kuerzel": "F2001"
+                },
+                {
+                    "kuerzel": "F2004"
+                },
+                {
+                    "kuerzel": "F2005"
+                }
+            ],
+            "feld1Name": "",
+            "feld1Value": "",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Auftragserteilung. \nErreichbarkeiten austauschen.\nRückmeldung an den Stab-Meldekopf wenn Auftrag erledigt.",
+            "rueckbau": "Reinigung - Dekontamination - Betankung.\n\nRückmeldung der Einsatzbereitschaft an den Stab - Meldekopf.",
+            "lastUpdate": "2021-12-07T20:23:34.136Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 4,
+        "fields": {
+            "kuerzel": "M303",
+            "name": "Arbeitsleistung Bauhof",
+            "beschreibung": "Personalarbeitseinsatz - keine Fahrzeuge notwendig. \nDer diensthabende Wirtschaftshofleiter meldet die mögliche Personalressource dem Stab-Meldekopf.",
+            "kategorie": "",
+            "verantwortung": "Diensthabender Wirtschaftshofleiter",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1002"
+                },
+                {
+                    "kuerzel": "C1016"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Maximale Personalressource:",
+            "feld1Value": "3",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Je nach Auftrag erfolgt die Rückmeldung ob dieser Auftrag personaltechnisch bewältigt werden kann oder weitere Ressourcen notwendig sind. \n\nRückmeldung wenn Auftrag durchgeführt ist.",
+            "rueckbau": "Reinigung - (Arbeitskleidungstausch)\nDokumentation der eingesetzten Mitarbeiter inkl. Arbeitszeit. \n\nRückmeldung der Einsatzbereitschaft an den Stab-Meldekopf.",
+            "lastUpdate": "2021-12-07T20:24:30.906Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 5,
+        "fields": {
+            "kuerzel": "M304",
+            "name": "Arbeitsleistung FF",
+            "beschreibung": "Personalarbeitseinsatz - keine Fahrzeuge notwendig. \nDer diensthabende Einsatzleiter der Feuerwehr meldet die mögliche Personalressource dem Stab-Meldekopf.",
+            "kategorie": "",
+            "verantwortung": "Einsatzleiter Feuerwehr",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1001"
+                },
+                {
+                    "kuerzel": "C1003"
+                }
+            ],
+            "staerke": 10,
+            "fahrzeuge": [
+                {
+                    "kuerzel": "F2001"
+                },
+                {
+                    "kuerzel": "F2004"
+                }
+            ],
+            "feld1Name": "Mögliche Personalressource:",
+            "feld1Value": "5",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Je nach Auftrag erfolgt die Rückmeldung ob dieser Auftrag personaltechnisch bewältigt werden kann oder weitere Ressourcen notwendig sind. \n\nRückmeldung wenn Auftrag durchgeführt ist.",
+            "rueckbau": "Rückmeldung der Einsatzbereitschaft an den Stab-Meldekopf.",
+            "lastUpdate": "2021-12-07T20:25:45.159Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 6,
+        "fields": {
+            "kuerzel": "M305",
+            "name": "Arbeitseinsatz KAT Team",
+            "beschreibung": "Personal Arbeitseinsatz vom KAT - Team (freiwillige Bürger die helfen).",
+            "kategorie": "",
+            "verantwortung": "KAT Team Leiter freiwillige Helfer",
+            "verstaendigung": [],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "",
+            "feld1Value": "",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Nach der Verständigung des KAT-Team Leiters durch den Stab, werden die freiwilligen Helfer des KAT-Teams lt. Schlüsselpersonalliste verständigt.\n\n* Voraussichtliche Aufgaben\n* Notwendige Personalstärke (Schlüsselpersonal splitten, Schichtbetrieb notwendig?)\n* Spezielle Schutzmaßnahmen (Schutzanzüge, Einweghandschuhe, Gummistiefel, Taschenlampe\n\nNach der Abklärung, ist das KAT-Team zu verständigen und zu briefen.",
+            "rueckbau": "Dokumentation:\nAnzahl und Namen eingesetzte Helfer\nEinsatzzeit und Einsatzdauer\nVorfälle und Verletzungen\nDebriefing (Kontakt mit kranken Personen, Aufenthalt in verseuchten Bereichen. \n\nAblage der Dokumentation im Stab-Meldekopf.",
+            "lastUpdate": "2021-12-07T20:27:18.051Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 7,
+        "fields": {
+            "kuerzel": "M306",
+            "name": "Wasserversorgung (Nutzwasser) FF",
+            "beschreibung": "Versorgung mit Nutzwasser durchgeführt mit den Löschfahrzeugen der Feuerwehr.",
+            "kategorie": "",
+            "verantwortung": "Einsatzleiter Feuerwehr",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1001"
+                },
+                {
+                    "kuerzel": "C1003"
+                }
+            ],
+            "staerke": 4,
+            "fahrzeuge": [
+                {
+                    "kuerzel": "F2002"
+                },
+                {
+                    "kuerzel": "F2003"
+                }
+            ],
+            "feld1Name": "Tanklöschfahrzeug:",
+            "feld1Value": "4000 l Nutzwasser",
+            "feld2Name": "Hilfeleistungsfahrzeug:",
+            "feld2Value": "2400 l Nutzwasser",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Die Wassermenge von insgesamt 6400 l steht grundsätzlich immer sofort zur Verfügung. \nEin Betankungsvorgang dauert bei funktionierenden Wassernetz ca. 10 Minuten (ohne Fahrzeit) \nDie Wasserabgabe kann über den Wasserwerfer 2400l in der Minute oder feindosiert \"Kübelabgabe\" erfolgen.  \nDie Aufnahme von Wasser aus offenen Gewässer sollte aufgrund der Algenbildung im Tank vermieden werden.",
+            "rueckbau": "Reinigung - Betankung Wasser - Betankung Treibstoff \n\nRückmeldung der Einsatzbereitschaft beim Stab-Meldekopf.",
+            "lastUpdate": "2021-12-07T20:28:46.347Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 8,
+        "fields": {
+            "kuerzel": "M307",
+            "name": "Wasserversorgung (Nutzwasser) Wirtschaftshof",
+            "beschreibung": "Versorgung mit Nutzwasser durchgeführt mit den Möglichkeiten des Wirtschaftshofes",
+            "kategorie": "",
+            "verantwortung": "Diensthabender Wirtschaftshofleiter",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1002"
+                },
+                {
+                    "kuerzel": "C1016"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [
+                {
+                    "kuerzel": "F2008"
+                },
+                {
+                    "kuerzel": "F2018"
+                }
+            ],
+            "feld1Name": "Wasserentnahme wenn in Schwadorf nicht möglich:",
+            "feld1Value": "Hochbehälter",
+            "feld2Name": "1000l Behälter:",
+            "feld2Value": "Stück: 1",
+            "feld3Name": "400l Behälter:",
+            "feld3Value": "Stück 1",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Für den Transport der Wasserbehälter sind die zugewiesenen Fahrzeuge erforderlich. Reinigung der Behälter vor dem Einsatz. Gefüllte Wasserbehälter können nur mit einem Stapler auf- bzw. abgeladen werden. \nOptional können die leeren Behälter an den folgenden Punkten stationär aufgestellt werden und in Intervallen durch die FF befüllt werden:\n\nParkplatz Heidegasse\nRichard Trenkwalderplatz\nParkplatz Friedhof\nHauptplatz\nDoktors Garten\nSpielplatz Kellergasse\nBeserl Parktz\nFranz Hubergasse (Umkehrplatz)\nParkplatz GH Karl \nEMS\n\nDokumentation der Aufstellungsorte (Foto, Uhrzeit, Wassermenge)",
+            "rueckbau": "Rücktransport der Behälter.\nReinigung und Desinfektion der Behälter. \n\nRückmeldung der Einsatzbereitschaft an den Stab-Meldekopf.",
+            "lastUpdate": "2021-12-07T20:30:10.571Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 9,
+        "fields": {
+            "kuerzel": "M308",
+            "name": "Aktivierung Notstromeinspeisung Wirtschaftshof",
+            "beschreibung": "Der Notstromgenerator für den Notbetrieb Wirtschaftshof wird in Betrieb genommen.",
+            "kategorie": "",
+            "verantwortung": "Diensthabender Wirtschaftshofleiter",
+            "verstaendigung": [],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Maximale Laufzeit ohne Tankvorgang:",
+            "feld1Value": "",
+            "feld2Name": "Benötigte Dieselmenge pro Stunde:",
+            "feld2Value": "",
+            "feld3Name": "Dauer bis zur Aktivierung:",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Das Notstromaggregat ist beschriftet mit \"Wirtschaftshof\". Einspeisedose ist bei der Einfahrt alte Kläranlage. Die Dauer bis zur Inbetriebnahme dauert ca. 10 Min. In der Einspeisedose ist der Schalter für Netz/Not.",
+            "rueckbau": "Betankung durchführen.",
+            "lastUpdate": "2021-12-07T20:31:50.039Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 10,
+        "fields": {
+            "kuerzel": "M309",
+            "name": "Notstromeinspeisung Feuerwehrhaus",
+            "beschreibung": "Veranlassung der Notstromeinspeisung Feuerwehrhaus.",
+            "kategorie": "",
+            "verantwortung": "Einsatzleiter Feuerwehr",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1001"
+                },
+                {
+                    "kuerzel": "C1003"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Maximale Laufzeit ohne Betankung:",
+            "feld1Value": "",
+            "feld2Name": "Dieselverbrauch pro/h",
+            "feld2Value": "",
+            "feld3Name": "Dauer bis zur Aktivierung:",
+            "feld3Value": "ca. 40 Minuten",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Das stationierte Notstromaggregat mit Stapler vom Lager heben und unter dem Flugdach in Position bringen. \n\nVerbindungskabel (Erdung) zum Blitzschutzerder herstellen.\n\nVerbindungskabel (Stromanschluss) durch Mauerdurchführung führen und an der vorgesehenen Steckdose anschließen. \n\nNotstromaggregat starten und im Technikraum den Schalter von Netz auf Not umstellen.",
+            "rueckbau": "Notstromaggregat stoppen. Kabelverbindungen in umgekehrter Reihenfolge wieder abbauen. Schalter im Technikraum von Not wieder auf Netz stellen. Notstromaggregat betanken und wieder in das Deckenlager mit Stapler stellen.",
+            "lastUpdate": "2021-12-07T20:32:48.705Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 11,
+        "fields": {
+            "kuerzel": "M310",
+            "name": "Notstromeinspeisung Gemeindeamt",
+            "beschreibung": "Aktivierung der Notstromeinspeisung am Gemeindeamt.",
+            "kategorie": "",
+            "verantwortung": "Diensthabender Wirtschaftshofleiter",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1002"
+                },
+                {
+                    "kuerzel": "C1016"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Maximale Laufzeit ohne Betankung:",
+            "feld1Value": "",
+            "feld2Name": "Dieselverbrauch pro/h",
+            "feld2Value": "",
+            "feld3Name": "Dauer bis zur Aktivierung:",
+            "feld3Value": "25 Minuten.",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Mit dem Stapler oder Pritsche wird das mit \"Gemeindeamt\" beschriftete Aggregat in Stellung gebracht. Die Einspeisedose befindet sich auf der Seite beim Fahnenmast inkl. Schalter Netz/Not.",
+            "rueckbau": "",
+            "lastUpdate": "2021-12-07T20:33:28.647Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 12,
+        "fields": {
+            "kuerzel": "M311",
+            "name": "Notstromeinspeisung Pumpwerke",
+            "beschreibung": "Aktivierung der Notstromeinspeisung der Pumpwerke.",
+            "kategorie": "",
+            "verantwortung": "Diensthabender Wirtschaftshofleiter",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1002"
+                },
+                {
+                    "kuerzel": "C1016"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Maximale Laufzeit ohne Betankung:",
+            "feld1Value": "",
+            "feld2Name": "Dieselverbrauch pro/h",
+            "feld2Value": "",
+            "feld3Name": "Dauer bis zur Aktivierung:",
+            "feld3Value": "2 h",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Folgende Pumpwerke sind notstrom versorgt:\n1. Johannesweg (Bruckerstrasse)\n2. Johannesweg (Johannesweg) \n3. Sportplatz (Eisenbahnbrücke)\n4. Sportplatz (Onr. 15)",
+            "rueckbau": "Betankung",
+            "lastUpdate": "2021-12-07T20:34:10.395Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 13,
+        "fields": {
+            "kuerzel": "M312",
+            "name": "Kühlmöglichkeit Nahrung Feuerwehr",
+            "beschreibung": "Kühlkapazitäten der Feuerwehr für die Kühlung von Nahrungsmittel.",
+            "kategorie": "",
+            "verantwortung": "Einsatzleiter Feuerwehr",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1001"
+                },
+                {
+                    "kuerzel": "C1003"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Kühlkapazität:",
+            "feld1Value": "4 m³ = 2 Europaletten",
+            "feld2Name": "Dauer bis Aktivierung:",
+            "feld2Value": "ca. 5 Stunden bis Abkühlung auf 4°",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Die Kühlzelle in der Waschbox ist über einen Schalter (Kühlhaus \"EIN\") zu aktivieren. Die Abkühlungsdauer auf ca. 4-5° beträgt ca. 5 Stunden.",
+            "rueckbau": "Schalter neben dem Kühlhaus auf \"Aus\" stellen. Keine weiteren Maßnahmen erforderlich.",
+            "lastUpdate": "2021-12-07T20:35:13.006Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 14,
+        "fields": {
+            "kuerzel": "M313",
+            "name": "Kühlmöglichkeiten Nahrung - Gemeinde",
+            "beschreibung": "Möglichkeiten zur Kühlung von Nahrungsmittel.",
+            "kategorie": "",
+            "verantwortung": "Diensthabender Wirtschaftshofleiter",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1002"
+                },
+                {
+                    "kuerzel": "C1016"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Aufzählung der Mobilen Kühlgeräte (Kühlschränke) mit Fassungsvermögen in Liter",
+            "feld1Value": "4 Kühlschränke mit je 400l",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Standorte, Inbetriebnahme.",
+            "rueckbau": "",
+            "lastUpdate": "2021-12-07T20:35:56.750Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 15,
+        "fields": {
+            "kuerzel": "M314",
+            "name": "Kühlmöglichkeiten Nahrung Extern",
+            "beschreibung": "Kühlmöglichkeiten der örtlichen Gastronomie und Einrichtungen.",
+            "kategorie": "",
+            "verantwortung": "Stab - S4 - Versorgung",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Extern: Autoanhänger Savel Himberg",
+            "feld1Value": "Erreichbarkeit:",
+            "feld2Name": "Extern: Weinbau Schüller Rauchenwarth",
+            "feld2Value": "Erreichbarkeit",
+            "feld3Name": "Extern: Fleischerei Seethaler Himberg",
+            "feld3Value": "Erreichbarkeit:",
+            "feld4Name": "Extern: Getränke Maier Trautmannsdorf",
+            "feld4Value": "Erreichbarkeit",
+            "feld5Name": "Extern: Katzianschütz Neusiedl",
+            "feld5Value": "Erreichbarkeit:",
+            "durchfuehrung": "Kapazitäten und Erreichbarkeiten.",
+            "rueckbau": "",
+            "lastUpdate": "2021-12-07T20:36:28.881Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 16,
+        "fields": {
+            "kuerzel": "M315",
+            "name": "Treibstoffversorgung - Marktgemeinde",
+            "beschreibung": "Kapazitäten für die Treibstoffversorgung durch die Marktgemeinde.",
+            "kategorie": "",
+            "verantwortung": "Diensthabender Wirtschaftshofleiter",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1002"
+                },
+                {
+                    "kuerzel": "C1016"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Tankstelle Diesel (Liter):",
+            "feld1Value": "20.000 l",
+            "feld2Name": "Diesel in Kanister:",
+            "feld2Value": "1000 l",
+            "feld3Name": "Benzin in Kanister:",
+            "feld3Value": "0 - Lagerhaus Tankstelle externe Einspeisung notwendig.",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "",
+            "rueckbau": "",
+            "lastUpdate": "2021-12-07T20:37:13.821Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 17,
+        "fields": {
+            "kuerzel": "M316",
+            "name": "Treibstoffversorgung - Extern",
+            "beschreibung": "Tankmöglichkeiten bei Externen Betrieben oder Landwirten mit Haustankstellen.",
+            "kategorie": "",
+            "verantwortung": "Stab - S4 - Versorgung",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "",
+            "feld1Value": "",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Aufzählung von Firmen mit Mobilen Tankstellen, Landwirte oder Betriebe mit Betriebstankstellen (Lengel... ).",
+            "rueckbau": "",
+            "lastUpdate": "2021-12-07T20:37:37.982Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 18,
+        "fields": {
+            "kuerzel": "M317",
+            "name": "Tierkadavarbergung - klein",
+            "beschreibung": "Bergung von Tierkadavern. Lager- bzw. Entsorgungsmöglichkeit",
+            "kategorie": "",
+            "verantwortung": "Diensthabender Wirtschaftshofleiter",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1002"
+                },
+                {
+                    "kuerzel": "C1016"
+                }
+            ],
+            "staerke": 2,
+            "fahrzeuge": [],
+            "feld1Name": "Grabstelle Örtlichkeit:",
+            "feld1Value": "",
+            "feld2Name": "Feuerstelle Örtlichkeit:",
+            "feld2Value": "Schottergrube",
+            "feld3Name": "Behälter für Bergung:",
+            "feld3Value": "Müllbehälter vom AWS",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Aufnahme der Örtlichkeiten. (Anzahl Kadaver)\nAbklärung ob Ansteckungsgefahr für Menschen besteht. \nAbklärung Entsorgungort (Tierkörperverwertung Simmering, Tulln)\nAbklärung Zwischenlagerung, Direkttransport oder Selbstentsorgung (Feuerstelle)\nAusgabe Schutzbekleidung - Wirtschaftshof (Einweganzug, Handschuhe, Maske, Brille, Gummistiefel) \nNotwendige Geräte - Wirtschaftshof  (Heugabel, Schaufel, Greifzangen)\nKescher für Gewässer erforderlich (Fischer, Privatpools,)",
+            "rueckbau": "Dokumentation der eingesetzten Personen\nDokumentation der geborgenen Kadaver\nReinigung und desinfizieren der Geräte (Desinfizierungsmittel am Wirtschaftshof)",
+            "lastUpdate": "2021-12-07T20:38:28.346Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 19,
+        "fields": {
+            "kuerzel": "M319",
+            "name": "Kühlmöglichkeiten Leichen - FF",
+            "beschreibung": "Lagerung von Leichen in Kühlzelle.",
+            "kategorie": "",
+            "verantwortung": "Einsatzleiter Feuerwehr",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1001"
+                },
+                {
+                    "kuerzel": "C1003"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Kapazität in der Kühlzelle:",
+            "feld1Value": "4 m³",
+            "feld2Name": "Leichenbergesäcke:",
+            "feld2Value": "100 Stück im K-Lager der FF",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Leichen werden in Leichenbergesäcke gepackt und mit Versorgungsfahrzeug (geschlossener Aufbau) transportiert. \nBeschriftung der Säcke!",
+            "rueckbau": "Dekontamination\nReinigung",
+            "lastUpdate": "2021-12-07T20:41:52.510Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 20,
+        "fields": {
+            "kuerzel": "M318",
+            "name": "Tierkadavarbergung gross - Feuerwehr/Wirtschaftshof",
+            "beschreibung": "Bergung von Tierkadavern. Lager- bzw. Entsorgungsmöglichkeit",
+            "kategorie": "",
+            "verantwortung": "Einsatzleiter Feuerwehr",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1001"
+                },
+                {
+                    "kuerzel": "C1003"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [
+                {
+                    "kuerzel": "F2002"
+                },
+                {
+                    "kuerzel": "F2003"
+                },
+                {
+                    "kuerzel": "F2004"
+                }
+            ],
+            "feld1Name": "",
+            "feld1Value": "",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Erkundung durch den Einsatzleiter\nAufnahme der Örtlichkeiten. (Anzahl Kadaver)\nAbklärung ob Ansteckungsgefahr für Menschen besteht. \nAbklärung Entsorgungort (Tierkörperverwertung Simmering, Tulln)\nAbklärung Zwischenlagerung, Direkttransport oder Selbstentsorgung (Feuerstelle)\nAusgabe Schutzbekleidung - Wirtschaftshof (Einweganzug, Handschuhe, Maske, Brille, Gummistiefel) \nFestlegung der Fahrzeuge und Geräte welche benötigt werden.",
+            "rueckbau": "Dokumentation der Einsatzkräfte\nDekontamination\nReinigung\n\nRückmelden der Einsatzbereitschaft an den Stab.",
+            "lastUpdate": "2021-12-07T20:42:37.493Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 21,
+        "fields": {
+            "kuerzel": "M320",
+            "name": "Kühlmöglichkeit Leichen - Gemeinde",
+            "beschreibung": "Lagerung von Leichen (mit Kühlung).",
+            "kategorie": "",
+            "verantwortung": "Stab - S4 - Versorgung",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1023"
+                },
+                {
+                    "kuerzel": "C1024"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Kühlmöglichkeit Aufbahrungshalle:",
+            "feld1Value": "2",
+            "feld2Name": "Kühlmöglichkeit Weinkellern (Gemeinekeller) 7°:",
+            "feld2Value": "50",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Leichenbergesäcke von FF organisieren. \nSchlüssel für Weinkeller organisieren. \nWichtig - eventuell Zusatzschlösser anbringen bzw. für Überwachung sorgen. \nBeschriftung der Leichenbergesäcke!",
+            "rueckbau": "Dekontamination der Lagerräumlichkeiten.",
+            "lastUpdate": "2021-12-07T20:43:38.652Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 22,
+        "fields": {
+            "kuerzel": "M321",
+            "name": "Feldlazarett mit Triage durch RK",
+            "beschreibung": "Einrichtung Feldlazarett mit Triage. In Absprache mit Rettungsdienst.\nVar. 1 Zeltstadt (KHD RK), Var. 2. EMS . Raumaufteilung. Wegebeschreibung An- und Abfahrt.",
+            "kategorie": "",
+            "verantwortung": "Einsatzleiter RK / Stab - S3",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1008"
+                },
+                {
+                    "kuerzel": "C1009"
+                },
+                {
+                    "kuerzel": "C1010"
+                },
+                {
+                    "kuerzel": "C1025"
+                },
+                {
+                    "kuerzel": "C1026"
+                },
+                {
+                    "kuerzel": "C1031"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Variante 1: Zeltstadt Örtlichkeit:",
+            "feld1Value": "Obere Umfahrungsstrasse 16, Wiese hinter Hallenbad",
+            "feld2Name": "Variante 2: Europäische Mittelschule",
+            "feld2Value": "Obere Umfahrungsstrasse 16, EMS",
+            "feld3Name": "Variante 1a: Zeltstadt Örtlichkeit:",
+            "feld3Value": "Am Sportplatz",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Das Rote Kreuz richtet nach eigenen Vorgaben und mit eigener Logistik ein Feldlazarett je nach Variante ein.",
+            "rueckbau": "",
+            "lastUpdate": "2021-12-07T20:44:56.623Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 23,
+        "fields": {
+            "kuerzel": "M322",
+            "name": "Notunterkunft klein - max. 20 Pers.",
+            "beschreibung": "Unterbringung von 20 Personen. Örtliche Nächtigungsbetriebe. Überörtliche Nächtigungsbetriebe.",
+            "kategorie": "",
+            "verantwortung": "Stab - S4 - Versorgung",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1023"
+                },
+                {
+                    "kuerzel": "C1024"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Kapazität in Schwadorf:",
+            "feld1Value": "Hotel Trischitz: 44 Betten",
+            "feld2Name": "Kapazität Schwadorf Umgebung:",
+            "feld2Value": "Hotel Bauer Rauchenwarth, Hotel Himberg, Hotel Deininger Fischamend, NH Hotel VIE, Hotel Reinisch Mannswörth, Hotel Moxy VIE, Life Hotel Vienna Airport Fischamend;",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Organisation von Nächtigungsmöglichkeiten in Ersatzwohnungen, Hotels, Pensionen in Schwadorf. Sind die Kapazitäten zu gering auch in der Umgebung von Schwadorf - Personentransport mit M324 sicherstellen. \n\nFeldbetten im K-Lager Gemeinde:\nFeldbette im K-Lager Feuerwehr:  30",
+            "rueckbau": "Dokumentation der ausgelagerten Personen sowie Zeitraum.\nGemeindeeinrichtungen reinigen. Feldbetten desinfizieren.",
+            "lastUpdate": "2021-12-07T20:45:55.076Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 24,
+        "fields": {
+            "kuerzel": "M323",
+            "name": "Notunterkunft für mehr als 20 Pers.",
+            "beschreibung": "Unterbringung von mehr als 20 Personen. Örtliche Nächtigungsbetriebe. Überörtliche Nächtigungsbetriebe.\nMassenquartier. EMS, Pfarrzentrum, VS, Kindergärten.",
+            "kategorie": "",
+            "verantwortung": "Stab - S3 - Einsatzmaßnahmen",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1025"
+                },
+                {
+                    "kuerzel": "C1026"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Nächtigungsbetriebe Schwadorf:",
+            "feld1Value": "",
+            "feld2Name": "Nächtigungsbetriebe Umgebung Schwadorf:",
+            "feld2Value": "Hotel Bauer Rauchenwarth, Hotel Himberg, Hotel Deininger Fischamend, NH Hotel VIE, Hotel Reinisch Mannswörth, Hotel Moxy VIE, Life Hotel Vienna Airport Fischamend;",
+            "feld3Name": "Kapazitäten Gemeindeobjekte:",
+            "feld3Value": "VS, EMS, Kindergärten, Pfarrzentrum;",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Je nach Bedarf werden die erforderlichen Betten von den K-Lagern FF und Gemeinde inkl. Logistikmaßnahmen 300 und 302 abgerufen. Von den jeweiligen geplanten Objekten ist der Verantwortliche zu verständigen. Pro Objekt übernimmt ein Leiter der Liegenschaft die Kommunikation mit dem Stab und weißt die Kräfte welche die Logistikaufgaben wahrnehmen ein. \n\nSobald die Liegenschaften bezugsfertig sind, ist das dem Stab - Meldekopf zu melden.",
+            "rueckbau": "",
+            "lastUpdate": "2021-12-07T20:46:40.275Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 25,
+        "fields": {
+            "kuerzel": "M324",
+            "name": "Personentransport max. 30 Pers.",
+            "beschreibung": "Personentransport von weniger als 30 Personen mit Mitteln der Feuerwehr und Marktgemeinde",
+            "kategorie": "",
+            "verantwortung": "Stab / Feuerwehr",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1001"
+                },
+                {
+                    "kuerzel": "C1002"
+                },
+                {
+                    "kuerzel": "C1003"
+                },
+                {
+                    "kuerzel": "C1016"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [
+                {
+                    "kuerzel": "F2001"
+                },
+                {
+                    "kuerzel": "F2004"
+                },
+                {
+                    "kuerzel": "F2006"
+                },
+                {
+                    "kuerzel": "F2007"
+                }
+            ],
+            "feld1Name": "Busunternehmen Schwadorf:",
+            "feld1Value": "Fa. Keip",
+            "feld2Name": "Busunternehmen Mannswörth:",
+            "feld2Value": "Fa. Aichinger",
+            "feld3Name": "Taxiunternehmen Margarethen",
+            "feld3Value": "Fa. Buchinger",
+            "feld4Name": "Busunternehmen Bruck:",
+            "feld4Value": "Fa. Pipal",
+            "feld5Name": "Taxiunternehmen Fischamend",
+            "feld5Value": "Fa. Potucek",
+            "durchfuehrung": "",
+            "rueckbau": "",
+            "lastUpdate": "2021-12-07T20:47:19.395Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 26,
+        "fields": {
+            "kuerzel": "M325",
+            "name": "Personentransport mehr als 30 Pers.",
+            "beschreibung": "Personentransport von mehr als 30 Personen mit Mitteln von Personentransportunternehmen. (Busfirmen, Taxi)",
+            "kategorie": "",
+            "verantwortung": "S3 - Einsatzmaßnahmen",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1025"
+                },
+                {
+                    "kuerzel": "C1026"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Busunternehmen:",
+            "feld1Value": "",
+            "feld2Name": "Taxiunternehmen:",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "",
+            "rueckbau": "",
+            "lastUpdate": "2021-12-07T20:47:55.719Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 27,
+        "fields": {
+            "kuerzel": "M326",
+            "name": "Notversorgung - Waschmöglichkeit Feuerwehr",
+            "beschreibung": "Schaffen einer Waschmöglichkeit für mehrere Personen. (Notdusche, …)",
+            "kategorie": "",
+            "verantwortung": "Einsatzleiter Feuerwehr",
+            "verstaendigung": [],
+            "staerke": 0,
+            "fahrzeuge": [
+                {
+                    "kuerzel": "F2002"
+                },
+                {
+                    "kuerzel": "F2003"
+                }
+            ],
+            "feld1Name": "Aufstellungsort:",
+            "feld1Value": "Am Sportplatz vor dem Schranken (Fam Jakubik)",
+            "feld2Name": "Ausweichort:",
+            "feld2Value": "",
+            "feld3Name": "Aufbaudauer ca. 2 h",
+            "feld3Value": "Info: NUR KALTWASSER MÖGLICH!",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Mit dem K-Zelt der Feuerwehr, wird ein Sichtschutz gewährleistet. In weiterer Folge wird ein Düsenschlauch am Zeltdach befestigt.",
+            "rueckbau": "Reinigung und Trocknung des Zeltes. \nAbbau.",
+            "lastUpdate": "2021-12-07T20:48:55.435Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 28,
+        "fields": {
+            "kuerzel": "M327",
+            "name": "Notversorgung - Dekostelle Fahrzeuge und Geräte",
+            "beschreibung": "Errichtung einer Dekostelle für Fahrzeuge und Geräte.",
+            "kategorie": "",
+            "verantwortung": "Feuerwehr",
+            "verstaendigung": [],
+            "staerke": 0,
+            "fahrzeuge": [
+                {
+                    "kuerzel": "F2002"
+                },
+                {
+                    "kuerzel": "F2003"
+                },
+                {
+                    "kuerzel": "F2004"
+                }
+            ],
+            "feld1Name": "",
+            "feld1Value": "",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Mit 2 Löschfahrzeugen wird eine Dekostrasse errichtet. Durch die Verwendung vom TLFA kann ein Dekomittel über den Pumpenvormischer beigemengt werden.",
+            "rueckbau": "",
+            "lastUpdate": "2021-12-07T20:50:12.604Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 29,
+        "fields": {
+            "kuerzel": "M328",
+            "name": "Notversorgung - Nahrung (Esspakete)",
+            "beschreibung": "Versorgung der Bevölkerung mit Grundnahrungsmittel. (Esspakete)",
+            "kategorie": "",
+            "verantwortung": "Stab S3, S4, - KAT Teamleiter Küche",
+            "verstaendigung": [],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Vorbereitungsraum 1:",
+            "feld1Value": "Kindergarten Franz Huber Gasse",
+            "feld2Name": "Vorbereitungsraum 2:",
+            "feld2Value": "Europäische Mittelschule",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Erhebung der nötigen Rationen (S1)\nErhebung der Nahrungsmittelbeschaffung (S4)\nÖrtlichkeit der Zusammenstellung definieren (S2)\nAusgabe durch Logistikmaßnahme organisieren (S3)",
+            "rueckbau": "Verderbliche Essensreste entsorgen. Reinigung der Vorbereitungsräume. Einlagerung haltbarer Lebensmittel.",
+            "lastUpdate": "2021-12-07T20:57:05.896Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 30,
+        "fields": {
+            "kuerzel": "M329",
+            "name": "Notversorgung - Nahrung (Feldküche)",
+            "beschreibung": "Einsatz der Feldküche (Warmes Essen)",
+            "kategorie": "",
+            "verantwortung": "",
+            "verstaendigung": [],
+            "staerke": 0,
+            "fahrzeuge": [
+                {
+                    "kuerzel": "F2008"
+                },
+                {
+                    "kuerzel": "F2013"
+                }
+            ],
+            "feld1Name": "Kapazität der Feldküche:",
+            "feld1Value": "1000",
+            "feld2Name": "Aufstellungsort 1:",
+            "feld2Value": "Innenhof EMS",
+            "feld3Name": "Aufstellungsort 2:",
+            "feld3Value": "Am Sportplatz",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Erhebung der nötigen Rationen (S1)\nErhebung der Nahrungsmittelbeschaffung (S4)\nÖrtlichkeit der Küchenaufstellung definieren (S2)\nOrganisieren des Transport der Feldküche zum Aufstellungsort \nAusgabe durch Logistikmaßnahme organisieren (S3)\nEinberufung KAT - Team Küche durch KAT-Team Leiter.",
+            "rueckbau": "Reinigung der Feldküche, Einlagerung der haltbaren Lebensmittel.",
+            "lastUpdate": "2021-12-07T20:57:38.041Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 31,
+        "fields": {
+            "kuerzel": "M330",
+            "name": "Notversorgung - Müllentsorgung",
+            "beschreibung": "Ausfall Müllentsorgung. Beseitigung von Müll. Zwischenlagerplatz. Abbrandplatz.",
+            "kategorie": "",
+            "verantwortung": "Stab - S3 - Einsatzmaßnahmen",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1025"
+                },
+                {
+                    "kuerzel": "C1026"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Müll zwischen Lagerplätze bzw. Abbrandplatz:",
+            "feld1Value": "Schottergrube Blaha, Strabag, Böhm, Springer;",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Grundsätzlich gibt es einen Notfallplan des Abfallverbandes.",
+            "rueckbau": "",
+            "lastUpdate": "2021-12-07T20:58:59.248Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 32,
+        "fields": {
+            "kuerzel": "M331",
+            "name": "Ausfall Fäkalienkanal",
+            "beschreibung": "Ausfall Fäkalienkanal durch Strukturschäden (Erdbeben oder Explosion)",
+            "kategorie": "",
+            "verantwortung": "Stab - S3 - Einsatzmaßnahmen",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1025"
+                },
+                {
+                    "kuerzel": "C1026"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Fachfirma 1: Firma Picardi Götzendorf",
+            "feld1Value": "",
+            "feld2Name": "Fachfirma 2: Firma Rohrer Schwechat",
+            "feld2Value": "",
+            "feld3Name": "Fachfirma 3: Firma Hametner",
+            "feld3Value": "",
+            "feld4Name": "Pumpen: Picardi, Rohrer, Hametner",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Ausfall von Fäkalienkanal. Ableitung, Spülung, Abpumpen. Möglich durch Strukturschäden. (Erdbeben)",
+            "rueckbau": "",
+            "lastUpdate": "2021-12-07T20:59:50.301Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 33,
+        "fields": {
+            "kuerzel": "M332",
+            "name": "Notmaßnahme - Erd/Schotterbewegung",
+            "beschreibung": "Herbei- oder Wegschaffen von Erdmaterialien. Bagger, Transportfahrzeuge. Fachfirmen:",
+            "kategorie": "",
+            "verantwortung": "Stab - S3 - Einsatzmaßnahmen",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1025"
+                },
+                {
+                    "kuerzel": "C1026"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [
+                {
+                    "kuerzel": "F2008"
+                },
+                {
+                    "kuerzel": "F2011"
+                },
+                {
+                    "kuerzel": "F2012"
+                },
+                {
+                    "kuerzel": "F2017"
+                },
+                {
+                    "kuerzel": "F2018"
+                }
+            ],
+            "feld1Name": "Bagger:",
+            "feld1Value": "Baumaschinen Glock Kleinneusiedl, Blaha, Hiller",
+            "feld2Name": "Radlader:",
+            "feld2Value": "Fa. Lengel, Blaha,",
+            "feld3Name": "Sattelauflieger (Schüttgut):",
+            "feld3Value": "Blaha, Aichinger, Hofstädter, Huber, Lengel",
+            "feld4Name": "Raupenbagger:",
+            "feld4Value": "Mayer,",
+            "feld5Name": "Sand/Schotter:",
+            "feld5Value": "Blaha, Aichinger, Hofstädter, Huber, Lengel",
+            "durchfuehrung": "Verständigung von Fachfirmen mit notwendigen Kapazitäten. Teilweise aus dem Ort. Dokumentation der Arbeits- und Einsatzzeiten.",
+            "rueckbau": "",
+            "lastUpdate": "2021-12-07T21:01:19.178Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 34,
+        "fields": {
+            "kuerzel": "M333",
+            "name": "Sperre öffentliche Plätze",
+            "beschreibung": "Sperren von öffentlichen Plätzen mittels Absperrband, Absperrgitter. (Spielplätze, Parks)",
+            "kategorie": "",
+            "verantwortung": "Diensthabender Wirtschaftshofleiter oder KAT-Team",
+            "verstaendigung": [],
+            "staerke": 2,
+            "fahrzeuge": [],
+            "feld1Name": "Auflistung der öffentlichen Plätze (Parks und Spielplätze)",
+            "feld1Value": "Am Eisteich, EMS, Radrastplatz Himbergerstrasse, Friedhof, Neue Heimat Himbergerstrasse, Ziegelofen, Beserlpark, Dr. Garten, Am Sportplatz, Hauptplatz, Urban Gardening,",
+            "feld2Name": "Notwendiges Absperrmaterial:",
+            "feld2Value": "10 Rollen Absperrband.",
+            "feld3Name": "Dauer der Durchführung:",
+            "feld3Value": "5 Stunden.",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Aufladen Absperrmaterialien\nDurchführung der Absperrung.\nDokumentation (Foto und Zeit der Sperre)\nMeldung an den Stab.",
+            "rueckbau": "Rückbau der Absperrung und Versorgung. Meldung an den Stab.",
+            "lastUpdate": "2021-12-07T21:01:55.181Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 35,
+        "fields": {
+            "kuerzel": "M334",
+            "name": "Sperre Gemeindestrassen",
+            "beschreibung": "Sperren von Gemeindestrassen mittels Absperrband, Absperrgitter. Verkehrsschilder",
+            "kategorie": "",
+            "verantwortung": "Diensthabender Wirtschaftshofleiter",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1002"
+                },
+                {
+                    "kuerzel": "C1016"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Absperrmaterialien:",
+            "feld1Value": "",
+            "feld2Name": "Verkehrszeichen:",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Aufladen der erforderlichen Absperrmaterialien\nAbsperrung\nDokumentation (Datum, Zeit, Foto -> wie wurde gesperrt).\nMeldung an den Stab.",
+            "rueckbau": "Abbau und Versorgung. \nRückmeldung an den Stab.",
+            "lastUpdate": "2021-12-07T21:02:48.241Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 36,
+        "fields": {
+            "kuerzel": "M335",
+            "name": "Notversorgung mit Medikamente",
+            "beschreibung": "Versorgung der Bevölkerung mit Medikamente (z.b. Jodtabletten)",
+            "kategorie": "",
+            "verantwortung": "Stab - S3 - Einsatzmaßnahmen",
+            "verstaendigung": [],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "",
+            "feld1Value": "",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Organisation der Medikamente (S4)\nAbholung der Medikamente (S3 -> Logistikmaßnahme M300)\nVerständigung des KAT-Teams freiwillige Helfer\nEinteilung der Helfer in Sprengel. \nAufteilung der Medikamente auf die Sprengel\nDokumentation der freiwilligen Helfer. \nStichprobenkontrollen der Gewährleistung der Zustellung",
+            "rueckbau": "Versperren oder Entsorgen des Restbestandes. \nDokumentation der Einsatzzeiten und Namen der freiwilligen Helfer.",
+            "lastUpdate": "2021-12-07T21:03:14.314Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 37,
+        "fields": {
+            "kuerzel": "M336",
+            "name": "Informationsverteilung Bevölkerung",
+            "beschreibung": "Verteilung von Flugzetteln bzw. Infopoint Veranstaltungen.",
+            "kategorie": "",
+            "verantwortung": "Stab - S3 - Einsatzmaßnahmen / freiw. Helfer",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1025"
+                },
+                {
+                    "kuerzel": "C1026"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "Infopoints:",
+            "feld1Value": "Parkplatz Heidegasse Richard Trenkwalderplatz Parkplatz Friedhof Hauptplatz Doktors Garten Spielplatz Kellergasse Beserl Parktz Franz Hubergasse (Umkehrplatz) Parkplatz GH Karl  EMS",
+            "feld2Name": "Anzahl von Postwurfen:",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Austragen von Postwurfsendungen durch freiwillige Helfer.\nVerständigun KAT-Team Leiter freiw. Helfer.\nEinteilung und Durchführung. \n\nBei Infopoints werden Aufsteller mit Informationen aufgestellt. \nVerteilung der Aufsteller durch M300\n\nParkplatz Heidegasse\nRichard Trenkwalderplatz\nParkplatz Friedhof\nHauptplatz\nDoktors Garten\nSpielplatz Kellergasse\nBeserl Parktz\nFranz Hubergasse (Umkehrplatz)\nParkplatz GH Karl \nEMS",
+            "rueckbau": "Einsammeln der Aufsteller. \nRückmeldung beim Stab.",
+            "lastUpdate": "2021-12-07T21:04:04.431Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 38,
+        "fields": {
+            "kuerzel": "M337",
+            "name": "Auslösung Zivilschutzalarm (Sirenen)",
+            "beschreibung": "Auf Anordnung des behördlichen Einsatzleiters (Bezirkshauptmann) kann über die Landeswarnzentrale der Zivilschutzalarm ausgelöst werden.\n\n3 Minuten Dauerton: Warnung\nAuf- & Ab heulen: Alarm\n1 Minute Dauerton: Entwarnung",
+            "kategorie": "G",
+            "verantwortung": "Örtlicher Einsatzleiter",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1000"
+                },
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "",
+            "feld1Value": "",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "",
+            "rueckbau": "",
+            "lastUpdate": "2022-01-27T21:27:51.751Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 39,
+        "fields": {
+            "kuerzel": "M338",
+            "name": "Information via Lautsprecherdurchsagen (FF)",
+            "beschreibung": "Mit dem Kommandofahrzeug der Feuerwehr werden Lautsprecher - Durchsagen durchgeführt.",
+            "kategorie": "F",
+            "verantwortung": "Einsatzleiter Feuerwehr",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1001"
+                },
+                {
+                    "kuerzel": "C1003"
+                }
+            ],
+            "staerke": 2,
+            "fahrzeuge": [
+                {
+                    "kuerzel": "F2001"
+                }
+            ],
+            "feld1Name": "",
+            "feld1Value": "",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "Vor der Durchführung ist der genaue Text mit der behördlichen Einsatzleitung (S3) abzustimmen und der genaue Bereich zu definieren. Zeitaufwand ca. 1-2 Stunden.",
+            "rueckbau": "Rückmeldung an den Stab - Meldekopf. Einsatzbereitschaft herstellen.",
+            "lastUpdate": "2022-01-27T21:30:42.490Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 40,
+        "fields": {
+            "kuerzel": "M339",
+            "name": "Auslösung KAT Warn APP",
+            "beschreibung": "Die Auslösung der KAT Warn APP erfolgt ausschließlich auf Anordnung des behördlichen Einsatzleiter über die Bundeswarnzentrale.",
+            "kategorie": "G",
+            "verantwortung": "Behördlicher örtlicher Einsatzleiter",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1000"
+                },
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "",
+            "feld1Value": "",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "",
+            "rueckbau": "",
+            "lastUpdate": "2022-01-27T21:32:28.439Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 41,
+        "fields": {
+            "kuerzel": "M340",
+            "name": "Veranlassung Radio & TV Durchsagen",
+            "beschreibung": "Die Veranlassung erfolgt ausschließlich über den behördlichen Einsatzleiter (Bezirkshauptmann).",
+            "kategorie": "G",
+            "verantwortung": "Örtlicher behördlicher Einsatzleiter",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1000"
+                },
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "",
+            "feld1Value": "",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "",
+            "rueckbau": "",
+            "lastUpdate": "2022-01-27T21:33:57.074Z"
+        }
+    },
+    {
+        "model": "core.massnahme",
+        "pk": 42,
+        "fields": {
+            "kuerzel": "M341",
+            "name": "Informationsverteilung via Social Media & Website",
+            "beschreibung": "Informationsverteilung über diese Kanäle.",
+            "kategorie": "G",
+            "verantwortung": "Örtlicher behördlicher Einsatzleiter",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1000"
+                },
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "staerke": 0,
+            "fahrzeuge": [],
+            "feld1Name": "",
+            "feld1Value": "",
+            "feld2Name": "",
+            "feld2Value": "",
+            "feld3Name": "",
+            "feld3Value": "",
+            "feld4Name": "",
+            "feld4Value": "",
+            "feld5Name": "",
+            "feld5Value": "",
+            "durchfuehrung": "",
+            "rueckbau": "",
+            "lastUpdate": "2022-01-27T21:43:31.801Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 1,
+        "fields": {
+            "kuerzel": "R100",
+            "name": "Behördlicher Einsatzleiter",
+            "beschreibung": "Der behördliche Einsatzleiter ist der Bezirkshauptmann. Er ist die oberste Instanz bei Katastrophen. \n\nZu den Geschäftszeiten wird der Bezirkshauptmann über die Amtsleitung der BH Bruck verständigt. \n\nAusserhalb der Geschäftszeiten erfolgt die Verständigung über die Polizei.",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1043"
+                }
+            ],
+            "notruf": "133",
+            "aufgaben": "",
+            "verstaendigung": [
+                {
+                    "kuerzel": "R101"
+                }
+            ],
+            "lastUpdate": "2021-12-06T20:15:43.569Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 2,
+        "fields": {
+            "kuerzel": "R103",
+            "name": "Einsatzleiter Feuerwehr",
+            "beschreibung": "Der Einsatzleiter der Feuerwehr führt die Feuerwehreinsatzkräfte im Gemeindegebiet. Er ist für die Einsatzmaßnahmen der Feuerwehr zur Brandbekämpfung, technische Hilfeleistungen bei Gefahr im Verzug und Menschenrettung verantwortlich.",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1001"
+                },
+                {
+                    "kuerzel": "C1003"
+                },
+                {
+                    "kuerzel": "C1004"
+                }
+            ],
+            "notruf": "122",
+            "aufgaben": "Gefahrenabwehr, Assistenzleistungen bei Bedarf. Der Einsatzleiter der Feuerwehr bedient sich an der Feuerwehreinsatzleitung und bildet im erforderlichen Fall einen Stab.   Es besteht die Möglichkeit dass der örtliche Feuerwehreinsatzleiter die Einsatzleitung der Feuerwehr an einem Funktionär des NÖLFV übergibt (Abschnitts-, Bezirks-, Landesfeuerwehrkommandant).   Sofern Geräte, Personal oder Fahrzeuge aus dem Katastrophenhilfsdienst erforderlich sind, werden diese vom Einsatzleiter der Feuerwehr über das Bezirksfeuerwehrkommando bzw. die Landeswarnzentrale angefordert. Bei Bedarf wird ein Verbindungsoffizier der Feuerwehr zum Führungsstab der Gemeinde entsendet. Dieser ist mit Laptop, Telefon und Tetrafunkgerät ausgerüstet.",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1000"
+                },
+                {
+                    "kuerzel": "C1002"
+                }
+            ],
+            "lastUpdate": "2021-12-07T19:10:48.232Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 3,
+        "fields": {
+            "kuerzel": "R101",
+            "name": "Örtlicher Einsatzleiter (BGM)",
+            "beschreibung": "Der örtliche Einsatzleiter ist der Bürgermeister. \nSollte dieser verhindert sein vertritt ihn der Vizebürgermeister.\n\nSollte der Vizebürgermeister ebenfalls verhindert sein, übernimmt diese Rolle XXX",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1000"
+                },
+                {
+                    "kuerzel": "C1005"
+                }
+            ],
+            "notruf": "",
+            "aufgaben": "Der örtliche Einsatzleiter koordiniert sämtliche Maßnahmen welche von der Bezirksverwaltungsbehörde angeordnet wurden. Der örtliche Einsatzleiter kann sich an dem Führungsstab bedienen, welcher vom örtlichen Einsatzleiter in der notwendigen Stärke einberufen wird. Er hält Verbindung zur BH und gibt Rückmeldungen über die Lageentwicklung. Je nach Schadensszenario kann von den eingesetzten Einsatzorganisationen ein Verbindungsoffizier angefordert werden. Die Verständigung der Verbindungsoffiziere obliegt den Stabsmitarbeitern mit dem Hinweis \"Verbindungsoffizier zum Stab entsenden\". Weiters melden die eingesetzten Einsatzkräfte regelmässig die Lageentwicklung. Sofern dies nicht selbstständig passiert, ist eine Lagemeldung bei den Einsatzorganisationen einzuholen.",
+            "verstaendigung": [],
+            "lastUpdate": "2021-12-07T19:13:19.236Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 4,
+        "fields": {
+            "kuerzel": "R102",
+            "name": "Stabsfunktionen S1 - S6",
+            "beschreibung": "Stabsfunktionen S1 - S6. \n\nMeldekopf.\nFühren der Lage.\nVerständigungen.\nDokumentation.\nNachbereitung.",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1019"
+                },
+                {
+                    "kuerzel": "C1020"
+                },
+                {
+                    "kuerzel": "C1021"
+                },
+                {
+                    "kuerzel": "C1022"
+                },
+                {
+                    "kuerzel": "C1023"
+                },
+                {
+                    "kuerzel": "C1024"
+                },
+                {
+                    "kuerzel": "C1025"
+                },
+                {
+                    "kuerzel": "C1026"
+                },
+                {
+                    "kuerzel": "C1027"
+                },
+                {
+                    "kuerzel": "C1028"
+                }
+            ],
+            "notruf": "",
+            "aufgaben": "Nach der Verständigung wird der Stabsführungs- und Lageraum eingerichtet (Sitzungssaal Gemeindamt). \n\nDie S-Funktionen bereiten Ihre nötigen Hilfsmittel vor.",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1000"
+                },
+                {
+                    "kuerzel": "C1005"
+                }
+            ],
+            "lastUpdate": "2021-12-07T19:15:18.940Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 5,
+        "fields": {
+            "kuerzel": "R104",
+            "name": "Polizei",
+            "beschreibung": "Es ist ein Verbindungsoffizier der Polizei als Unterstützung für die Stabsarbeit anzufordern.",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1006"
+                },
+                {
+                    "kuerzel": "C1007"
+                }
+            ],
+            "notruf": "133",
+            "aufgaben": "Aufgaben laut definierten Hoheitsaufgaben. (Erhebung, Absicherung, Verständigungen).",
+            "verstaendigung": [],
+            "lastUpdate": "2021-12-07T19:16:02.044Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 6,
+        "fields": {
+            "kuerzel": "R105",
+            "name": "Einsatzleiter Rettungsdienst",
+            "beschreibung": "Es ist ein Verbindungsoffizier der Rettung als Unterstützung für den Stab anzufordern. Verständigung erfolgt durch den Stab.",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1008"
+                },
+                {
+                    "kuerzel": "C1009"
+                },
+                {
+                    "kuerzel": "C1010"
+                }
+            ],
+            "notruf": "",
+            "aufgaben": "",
+            "verstaendigung": [],
+            "lastUpdate": "2021-12-07T19:16:50.772Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 7,
+        "fields": {
+            "kuerzel": "R106",
+            "name": "Energieversorger Strom",
+            "beschreibung": "Energieversorger Strom. Zuständig für die Stromversorgung.",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1011"
+                }
+            ],
+            "notruf": "0800500600",
+            "aufgaben": "Verantwortlich für Schadensbehebung bei Schäden an der Stromversorgung im öffentlichen Bereich.",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "lastUpdate": "2021-12-07T19:35:04.678Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 8,
+        "fields": {
+            "kuerzel": "R107",
+            "name": "Energieversorger Wasser",
+            "beschreibung": "EVN",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1012"
+                },
+                {
+                    "kuerzel": "C1013"
+                }
+            ],
+            "notruf": "0225289616",
+            "aufgaben": "Zuständig für die Wasserversorgung inkl. Leitungen im Ortsgebiet Schwadorf. Öffentlicher Grund.",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "lastUpdate": "2021-12-07T19:41:17.368Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 9,
+        "fields": {
+            "kuerzel": "R108",
+            "name": "Energieversorger Gas",
+            "beschreibung": "Energieversorger Gas.Zuständig für die Infrastrukur der Gasversorgung. (alles vor dem Gaszähler).",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1014"
+                },
+                {
+                    "kuerzel": "C1015"
+                }
+            ],
+            "notruf": "128",
+            "aufgaben": "Absperrungen von Gasleitungen (vor dem Gaszähler). Messungen von Gaskonzentrationen. Freigabe von abgesperrten Gasleitungen (auch in Wohnungen).",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "lastUpdate": "2021-12-07T19:42:25.609Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 10,
+        "fields": {
+            "kuerzel": "R109",
+            "name": "Flugplatzbetriebsleitung & Austrocontrol",
+            "beschreibung": "Zuständig für den Flugplatz (Airside). Freigabe von Starts und Landungen.\nAustrocontrol: Luftraumüberwachung bzw. Freigabe.",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1029"
+                },
+                {
+                    "kuerzel": "C1030"
+                }
+            ],
+            "notruf": "017007155",
+            "aufgaben": "Sperre vom Luftverkehr Abflug und Landungen. \nAustrocontrol: Sperre Luftraum.",
+            "verstaendigung": [],
+            "lastUpdate": "2021-12-07T19:43:07.443Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 11,
+        "fields": {
+            "kuerzel": "R110",
+            "name": "Leiter Wirtschaftshof",
+            "beschreibung": "Leitet den Wirtschaftshof.",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1002"
+                },
+                {
+                    "kuerzel": "C1016"
+                }
+            ],
+            "notruf": "",
+            "aufgaben": "Organisiert und Verständigt das Wirtschaftshofpersonal. Setzt die Maßnahmen um. Gibt Lagemeldungen an den Stab weiter.",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "lastUpdate": "2021-12-07T20:11:24.507Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 12,
+        "fields": {
+            "kuerzel": "R111",
+            "name": "Schulleiter EMS",
+            "beschreibung": "Schulleiter der EMS. \nAnzahl der Klassenräume:\nAnzahl der Duschmöglichkeiten:",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1017"
+                },
+                {
+                    "kuerzel": "C1026"
+                },
+                {
+                    "kuerzel": "C1031"
+                }
+            ],
+            "notruf": "",
+            "aufgaben": "Verständigt den Schulwart. \nStellt die notwendigen Räumlichkeiten zur Verfügung.",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "lastUpdate": "2021-12-07T20:12:11.848Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 13,
+        "fields": {
+            "kuerzel": "R112",
+            "name": "Schulleiter VS",
+            "beschreibung": "Leitet die VS. \nSchulklassen Räume:\nDuschmöglichkeiten:",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1018"
+                },
+                {
+                    "kuerzel": "C1026"
+                },
+                {
+                    "kuerzel": "C1032"
+                }
+            ],
+            "notruf": "",
+            "aufgaben": "Verständigt den Schulwart.\nStellt die Räumlichkeiten zur Verfügung.",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "lastUpdate": "2021-12-07T20:12:51.023Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 14,
+        "fields": {
+            "kuerzel": "R113",
+            "name": "Gemeindearzt",
+            "beschreibung": "Ist für das Gesundheitswesen verantwortlich.",
+            "erreichbarkeit": [
+                {
+                    "kuerzel": "C1033"
+                }
+            ],
+            "notruf": "",
+            "aufgaben": "Kooperiert mit dem Stab und den Hilfskräften. Leitet mit dem RK das Feldlazarett.",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "lastUpdate": "2021-12-07T20:13:23.312Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 15,
+        "fields": {
+            "kuerzel": "R114",
+            "name": "KAT Teamleiter Küche",
+            "beschreibung": "Organisiert das Team der Feldküche bzw. ist verantwortlich für die Nahrungsmittelausgabe. \n\nDie Beschaffung der Nahrungsmittel organisiert der Stab.",
+            "erreichbarkeit": [],
+            "notruf": "",
+            "aufgaben": "Organisiert das KAT Team Küche. Einberufung vom notwendigen Schlüsselpersonal bzw. Einteilung der freiwilligen Helfer (nicht Einsatzorganisation). \n\nZusammenstellung von Nahrungsmittelpaketen für die Ausgabe an der Bevölkerung. Rationenerstellung. \n\nBetreuung der Feldküche.",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "lastUpdate": "2021-12-07T20:14:17.920Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 16,
+        "fields": {
+            "kuerzel": "R115",
+            "name": "KAT Teamleiter Gesundheit",
+            "beschreibung": "Verantwortlicher für das Schlüsselpersonal Gesundheit:\nÄrzte, Krankenpflegerinnen, Notfallsanitäter, Rettungssanitäter;",
+            "erreichbarkeit": [],
+            "notruf": "",
+            "aufgaben": "Organisiert das Schlüsselpersonal für Gesundheit. Dieses Personal unterstützt in Gesundheitskrisen, Feldlazarett, Massenanfall von Kranken, Seuchen bei Menschen, etc. \n\nDie Schutzbekleidung wird vom Stab organisiert und beigestellt.",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "lastUpdate": "2021-12-07T20:14:49.564Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 17,
+        "fields": {
+            "kuerzel": "R116",
+            "name": "KAT Teamleiter Energie",
+            "beschreibung": "Verantwortlich für das KAT Team Energie. Schlüsselpersonal für Elektrotechnik, Installationstechnik.",
+            "erreichbarkeit": [],
+            "notruf": "",
+            "aufgaben": "Organisiert das KAT Team Energie. Unterstützt mit Fachkenntnissen über Elektro- und Installationstechnik. \n\nErstellt provisorische Infrastrukturlösungen.",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "lastUpdate": "2021-12-07T20:15:44.181Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 18,
+        "fields": {
+            "kuerzel": "R117",
+            "name": "KAT Teamleiter freiwillige Helfer",
+            "beschreibung": "Verantwortlich für das Schlüsselpersonal KAT Team freiwillige Helfer.",
+            "erreichbarkeit": [],
+            "notruf": "",
+            "aufgaben": "Organisiert freiwillige Helfer. Teilt die Aufträge an die freiwilligen Helfer. Dokumentiert die Anzahl der Helfer, Einsatzzeiten der Helfer. \nFür dieses Team sind keine speziellen Fähigkeiten erforderlich. (Jedermann)",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "lastUpdate": "2021-12-07T20:16:17.990Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 19,
+        "fields": {
+            "kuerzel": "R118",
+            "name": "ÖBB Notfallkoordinator",
+            "beschreibung": "Ist zu Verständigen wenn der Gleisbereich der ÖBB betroffen ist.",
+            "erreichbarkeit": [],
+            "notruf": "019300054530",
+            "aufgaben": "Einstellung Zugverkehr. Entsendung eines ÖBB Einsatzleiters. Veranlasst Stromabschaltungen im Bereich der ÖBB",
+            "verstaendigung": [],
+            "lastUpdate": "2021-12-07T20:17:02.643Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 20,
+        "fields": {
+            "kuerzel": "R119",
+            "name": "Vorregion Busverkehr",
+            "beschreibung": "Verkehrsplanung, Verkehrsleitung,",
+            "erreichbarkeit": [],
+            "notruf": "",
+            "aufgaben": "Ausweichstrecken für Busse. Beistellung von Transportmitteln.",
+            "verstaendigung": [],
+            "lastUpdate": "2021-12-07T20:17:30.421Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 21,
+        "fields": {
+            "kuerzel": "R120",
+            "name": "Amtstierarzt",
+            "beschreibung": "Veterinär Mediziner. Entscheidungsträger bei Maßnahmen.",
+            "erreichbarkeit": [],
+            "notruf": "Über BH Bruck Journaldienst zu verständigen!",
+            "aufgaben": "Entscheidet über Maßnahmen und Vorgangsweisen im Anlassfall.",
+            "verstaendigung": [
+                {
+                    "kuerzel": "C1041"
+                }
+            ],
+            "lastUpdate": "2021-12-10T15:45:57.985Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 22,
+        "fields": {
+            "kuerzel": "R121",
+            "name": "Leiter Kindergarten 1 (Passauerstrasse)",
+            "beschreibung": "Leitet die KG \nBeistellung Notquartier",
+            "erreichbarkeit": [],
+            "notruf": "",
+            "aufgaben": "Beistellung der Räumlichkeiten als Notquartier oder Essensausgabestelle.",
+            "verstaendigung": [],
+            "lastUpdate": "2022-01-30T07:40:14.211Z"
+        }
+    },
+    {
+        "model": "core.rolle",
+        "pk": 23,
+        "fields": {
+            "kuerzel": "R122",
+            "name": "Leiter Kindergarten 2 (Franz Huber Gasse)",
+            "beschreibung": "Leitet Kindergarten\nBeistellung Räumlichkeiten für Notquartier.",
+            "erreichbarkeit": [],
+            "notruf": "",
+            "aufgaben": "Stellt Notquartier und Essensausgabestelle.",
+            "verstaendigung": [],
+            "lastUpdate": "2022-01-30T07:41:24.244Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 1,
+        "fields": {
+            "kuerzel": "C1000",
+            "name": "Jürgen Maschl",
+            "funktion": "Bürgermeister",
+            "telefon": "06648834852",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "juergen.maschl@schwadorf.gv.at",
+            "lastUpdate": "2021-12-06T20:13:19.522Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 2,
+        "fields": {
+            "kuerzel": "C1001",
+            "name": "Wolfgang Niederauer",
+            "funktion": "Feuerwehrkommandant",
+            "telefon": "06505055122",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "wolfgang.niederauer@feuerwehr.gv.at",
+            "lastUpdate": "2021-12-07T08:21:58.179Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 3,
+        "fields": {
+            "kuerzel": "C1002",
+            "name": "Wolfgang Janosi",
+            "funktion": "Leiter Wirtschaftshof",
+            "telefon": "06767013925",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "wolfgang.janosi@schwadorf.gv.at",
+            "lastUpdate": "2021-12-07T08:33:32.579Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 4,
+        "fields": {
+            "kuerzel": "C1003",
+            "name": "Harald Wolf",
+            "funktion": "Feuerwehrkommandant Stv.",
+            "telefon": "06649203836",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "harry.wolf@gmx.at",
+            "lastUpdate": "2021-12-07T08:34:03.363Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 5,
+        "fields": {
+            "kuerzel": "C1004",
+            "name": "Michael Reichenauer",
+            "funktion": "Administrator",
+            "telefon": "06644514705",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "michael.reichenauer@feuerwehr.gv.at",
+            "lastUpdate": "2021-12-07T08:35:27.625Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 6,
+        "fields": {
+            "kuerzel": "C1005",
+            "name": "Gustav Weber",
+            "funktion": "Vizebürgermeister",
+            "telefon": "06643119356",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "gustav.weber@schwadorf.gv.at",
+            "lastUpdate": "2021-12-07T08:36:03.903Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 7,
+        "fields": {
+            "kuerzel": "C1006",
+            "name": "Bezirkspolizeikommando Bruck a. d. Leitha",
+            "funktion": "",
+            "telefon": "0591333320305",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "bpk-n-bruck-an-der-leitha@polizei.gv.at",
+            "lastUpdate": "2021-12-07T08:36:26.858Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 8,
+        "fields": {
+            "kuerzel": "C1007",
+            "name": "Herber Spreitzer",
+            "funktion": "Chefinspektor Polizeiinspektion Fischamend",
+            "telefon": "0591333222100",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "pi-n-fischamend@polizei.gv.at",
+            "lastUpdate": "2021-12-07T09:05:50.630Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 9,
+        "fields": {
+            "kuerzel": "C1008",
+            "name": "Mag. Markus Palkowitz",
+            "funktion": "",
+            "telefon": "06646214861",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:06:06.641Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 10,
+        "fields": {
+            "kuerzel": "C1009",
+            "name": "Rotes Kreuz Bezirksstelle Schwechat",
+            "funktion": "",
+            "telefon": "05914477000",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:06:20.630Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 11,
+        "fields": {
+            "kuerzel": "C1010",
+            "name": "Ing. Kirschka Michael",
+            "funktion": "Kommandant RK",
+            "telefon": "06644349639",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:06:44.771Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 12,
+        "fields": {
+            "kuerzel": "C1011",
+            "name": "Wiener Netze",
+            "funktion": "",
+            "telefon": "05012810100",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:20:53.612Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 13,
+        "fields": {
+            "kuerzel": "C1012",
+            "name": "Wasser-Zentrale Südstadt",
+            "funktion": "",
+            "telefon": "02236446010",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:21:12.444Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 14,
+        "fields": {
+            "kuerzel": "C1013",
+            "name": "EVN Wasser-Kundenzentrum",
+            "funktion": "",
+            "telefon": "022522000",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:21:28.895Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 15,
+        "fields": {
+            "kuerzel": "C1014",
+            "name": "EVN Gas",
+            "funktion": "",
+            "telefon": "022362000",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:22:11.657Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 16,
+        "fields": {
+            "kuerzel": "C1015",
+            "name": "EVN Gas",
+            "funktion": "Betriebstelle Bruck a.d. Leitha",
+            "telefon": "021626090",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:22:28.801Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 17,
+        "fields": {
+            "kuerzel": "C1016",
+            "name": "Gani Rexhaj",
+            "funktion": "Leiter Wirtschaftshof Stv.",
+            "telefon": "06765234524",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:22:47.350Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 18,
+        "fields": {
+            "kuerzel": "C1017",
+            "name": "Gerlinde Stadler",
+            "funktion": "",
+            "telefon": "02230228811",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "324112@noeschule.at",
+            "lastUpdate": "2021-12-07T09:23:08.945Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 19,
+        "fields": {
+            "kuerzel": "C1018",
+            "name": "Sabine Maleschitz",
+            "funktion": "",
+            "telefon": "022302265",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "5324231@noeschule.at",
+            "lastUpdate": "2021-12-07T09:23:25.670Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 20,
+        "fields": {
+            "kuerzel": "C1019",
+            "name": "Birgit Zethner",
+            "funktion": "Amtsleiterin",
+            "telefon": "067640707093",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "birgit.zethner@schwadorf.gv.at",
+            "lastUpdate": "2021-12-07T09:23:48.327Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 21,
+        "fields": {
+            "kuerzel": "C1020",
+            "name": "Ing. Isabella Müllner",
+            "funktion": "Amtsleiterin Stv. / Leiterin Bauamt",
+            "telefon": "06767314492",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "isabella.muellner@schwadorf.gv.at",
+            "lastUpdate": "2021-12-07T09:26:07.310Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 22,
+        "fields": {
+            "kuerzel": "C1021",
+            "name": "Ing. Christian Staller",
+            "funktion": "GFGR",
+            "telefon": "0676844121217",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "christian.staller@schwadorf.gv.at",
+            "lastUpdate": "2021-12-07T09:27:49.315Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 23,
+        "fields": {
+            "kuerzel": "C1022",
+            "name": "Brigitte Richter",
+            "funktion": "S1 und S4",
+            "telefon": "066488399320",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:28:58.563Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 24,
+        "fields": {
+            "kuerzel": "C1023",
+            "name": "Christiane Amsüss",
+            "funktion": "S1 und S4",
+            "telefon": "06764977803",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:29:49.311Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 25,
+        "fields": {
+            "kuerzel": "C1024",
+            "name": "Eveline Prokopp",
+            "funktion": "S1 und S4",
+            "telefon": "06505546408",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:30:41.689Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 26,
+        "fields": {
+            "kuerzel": "C1025",
+            "name": "Josef Baumgartner",
+            "funktion": "S2 und S3",
+            "telefon": "06648355409",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:31:02.106Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 27,
+        "fields": {
+            "kuerzel": "C1026",
+            "name": "Willibald Friedrich",
+            "funktion": "S2 und S3 / Techniker EMS bzw. Hallenbad",
+            "telefon": "06601964426",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:31:26.835Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 28,
+        "fields": {
+            "kuerzel": "C1027",
+            "name": "Melanie Strauby",
+            "funktion": "S5 und S6",
+            "telefon": "06767900760",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:32:10.003Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 29,
+        "fields": {
+            "kuerzel": "C1028",
+            "name": "Christina Glatzer",
+            "funktion": "S5 und S6",
+            "telefon": "069910453823",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:32:27.395Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 30,
+        "fields": {
+            "kuerzel": "C1029",
+            "name": "AIRSIDE OPERATIONS",
+            "funktion": "Flugplatzbetriebsleitung",
+            "telefon": "01700722353",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "airsideoperationscenter@viennaairport.com",
+            "lastUpdate": "2021-12-07T09:32:58.983Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 31,
+        "fields": {
+            "kuerzel": "C1030",
+            "name": "Austro Control",
+            "funktion": "Luftraumüberwachung",
+            "telefon": "01700732262",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "loww.tower@austrocontrol.at",
+            "lastUpdate": "2021-12-07T09:33:25.917Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 32,
+        "fields": {
+            "kuerzel": "C1031",
+            "name": "Zijadin Rexhaj",
+            "funktion": "Schulwart EMS",
+            "telefon": "06765234527",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:33:47.796Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 33,
+        "fields": {
+            "kuerzel": "C1032",
+            "name": "Marko Lubina",
+            "funktion": "Schulwart Volksschule",
+            "telefon": "06765234526",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:34:04.448Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 34,
+        "fields": {
+            "kuerzel": "C1033",
+            "name": "Dr. Claudia Ertl",
+            "funktion": "Gemeindeärztin",
+            "telefon": "069911855105 / 022302142",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:34:34.032Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 35,
+        "fields": {
+            "kuerzel": "C1034",
+            "name": "ÖBB Notfallkoordinator",
+            "funktion": "ÖBB Notfallkoordinator",
+            "telefon": "019300054530",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "notfall@oebb.at",
+            "lastUpdate": "2021-12-07T09:35:32.875Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 36,
+        "fields": {
+            "kuerzel": "C1035",
+            "name": "August Kugler - Postbus AG",
+            "funktion": "Regionalmagament Ost, Verkehrsleitung Vösendorf, Verkehrsplaner",
+            "telefon": "06646243219",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "august.kugler@postbus.at",
+            "lastUpdate": "2021-12-07T09:36:22.666Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 37,
+        "fields": {
+            "kuerzel": "C1036",
+            "name": "Strassenmeisterei Bruck",
+            "funktion": "Strassenmeisterei",
+            "telefon": "02162902523450",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "post.strm.bruck@noel.gv.at",
+            "lastUpdate": "2021-12-07T09:36:51.624Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 38,
+        "fields": {
+            "kuerzel": "C1037",
+            "name": "Felix Böhm (Strm)",
+            "funktion": "Strassenmeister",
+            "telefon": "0676812620311",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "felix.boehm@noel.gv.at",
+            "lastUpdate": "2021-12-07T09:37:12.443Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 39,
+        "fields": {
+            "kuerzel": "C1038",
+            "name": "Markus Reisacher (Strm.Stv.)",
+            "funktion": "Strassenmeister Stellvertreter",
+            "telefon": "067681220312",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "markus.reisacher@noel.gv.at",
+            "lastUpdate": "2021-12-07T09:37:36.008Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 40,
+        "fields": {
+            "kuerzel": "C1039",
+            "name": "Wasserrechtsbehörde NÖ",
+            "funktion": "Wasserrechtsbehörde NÖ",
+            "telefon": "02742900514440",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "post.wa1@noel.gv.at",
+            "lastUpdate": "2021-12-07T09:37:54.756Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 41,
+        "fields": {
+            "kuerzel": "C1040",
+            "name": "Robert Amon (BH Wasser)",
+            "funktion": "Wasserrechtsbehörde BL",
+            "telefon": "067681223288",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "robert.amon@noel.gv.at",
+            "lastUpdate": "2021-12-07T09:38:14.248Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 42,
+        "fields": {
+            "kuerzel": "C1041",
+            "name": "STAB - MELDEKOPF",
+            "funktion": "STAB Meldekopf - Einsatzleitung",
+            "telefon": "",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "",
+            "lastUpdate": "2021-12-07T09:38:27.284Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 43,
+        "fields": {
+            "kuerzel": "C1042",
+            "name": "Landeswarnzentrale Tulln",
+            "funktion": "LWZ",
+            "telefon": "+43 2272900517374",
+            "telefon2": "",
+            "telefon3": "",
+            "email": "n-lwz@feuerwehr.or.at",
+            "lastUpdate": "2022-01-30T08:57:08.592Z"
+        }
+    },
+    {
+        "model": "core.kontakt",
+        "pk": 44,
+        "fields": {
+            "kuerzel": "C1043",
+            "name": "Bezirkshauptmannschaft Bruck/Leitha",
+            "funktion": "Behördlicher Einsatzleiter",
+            "telefon": "02162 90250",
+            "telefon2": "0676 81223111",
+            "telefon3": "",
+            "email": "post.bhbl@noel.gv.at",
+            "lastUpdate": "2022-01-30T09:01:43.791Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 2,
+        "fields": {
+            "kuerzel": "F2001",
+            "name": "Feuerwehr - Kommando & Mannschaftstransportfahrzeug",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "VW T5",
+            "lenkerberechtigung": "B",
+            "stationierung": "Feuerwehr",
+            "personenkapazitaet": 8,
+            "treibstoff": "Diesel",
+            "nutzlast": 0,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": false,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "Kugelkopf",
+            "lastUpdate": "2021-12-08T20:42:23.263Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 3,
+        "fields": {
+            "kuerzel": "F2002",
+            "name": "Feuerwehr - Hilfeistungsfahrzeug 2400",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "MAN",
+            "lenkerberechtigung": "C",
+            "stationierung": "Feuerwehr",
+            "personenkapazitaet": 9,
+            "treibstoff": "Diesel",
+            "nutzlast": 0,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "2400",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": true,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "Rockinger - LKW",
+            "lastUpdate": "2021-12-08T20:43:50.251Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 4,
+        "fields": {
+            "kuerzel": "F2003",
+            "name": "Feuerwehr - Tanklöschfahrzeug 4000",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "Steyr",
+            "lenkerberechtigung": "C",
+            "stationierung": "Feuerwehr",
+            "personenkapazitaet": 9,
+            "treibstoff": "Diesel",
+            "nutzlast": 0,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "4000",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": true,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "",
+            "lastUpdate": "2021-12-08T20:44:30.138Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 5,
+        "fields": {
+            "kuerzel": "F2004",
+            "name": "Feuerwehr - Versorgungsfahrzeug",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "Mercedes Sprinter",
+            "lenkerberechtigung": "C",
+            "stationierung": "Feuerwehr",
+            "personenkapazitaet": 7,
+            "treibstoff": "Diesel",
+            "nutzlast": 2500,
+            "ladebordwand": true,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": true,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "Kugelkopf",
+            "lastUpdate": "2021-12-08T20:45:39.523Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 6,
+        "fields": {
+            "kuerzel": "F2005",
+            "name": "Feuerwehr - Einachsanhänger",
+            "fahrzeug": false,
+            "anhaenger": true,
+            "type": "Pongratz",
+            "lenkerberechtigung": "B",
+            "stationierung": "Feuerwehr",
+            "personenkapazitaet": 0,
+            "treibstoff": "",
+            "nutzlast": 750,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": true,
+            "wechselaufbau": "Ladefläche 1x2 m, Plane;",
+            "anhaengervorrichtung": "Kugelkopf",
+            "lastUpdate": "2021-12-08T20:47:27.600Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 7,
+        "fields": {
+            "kuerzel": "F2006",
+            "name": "Gemeinde - Personentransporter",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "Mercedes Benz Sprinter",
+            "lenkerberechtigung": "B",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 9,
+            "treibstoff": "Diesel",
+            "nutzlast": 0,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": true,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "PKW - Kugelkopf",
+            "lastUpdate": "2022-01-27T09:29:29.144Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 8,
+        "fields": {
+            "kuerzel": "F2007",
+            "name": "Gemeinde - Personentransporter E",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "Mercedes Benz - E Vito Tourer",
+            "lenkerberechtigung": "B",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 8,
+            "treibstoff": "Strom",
+            "nutzlast": 0,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": true,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "",
+            "lastUpdate": "2022-01-27T09:34:37.089Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 9,
+        "fields": {
+            "kuerzel": "F2008",
+            "name": "Gemeinde - Unimog - Mehrzweckfahrzeug",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "UNIMOG Mercedes Benz",
+            "lenkerberechtigung": "C",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 2,
+            "treibstoff": "Diesel",
+            "nutzlast": 5400,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "1000",
+            "wassertankAbnehmbar": true,
+            "geschlossenerAufbau": false,
+            "wechselaufbau": "1 Gittermulde, 4 Absetzmulde (Schuttmulde), 1 Flachmulde",
+            "anhaengervorrichtung": "LKW - Rockinger & Schneepflug",
+            "lastUpdate": "2022-01-27T09:44:45.048Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 10,
+        "fields": {
+            "kuerzel": "F2009",
+            "name": "Gemeinde - Pritsche 1 (geschlossen)",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "Mercedes Benz Sprinter",
+            "lenkerberechtigung": "B",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 3,
+            "treibstoff": "Diesel",
+            "nutzlast": 1145,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": true,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "Pkw - Kugelkopf",
+            "lastUpdate": "2022-01-27T09:52:23.998Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 11,
+        "fields": {
+            "kuerzel": "F2010",
+            "name": "Gemeinde - Pritsche 2 (offen)",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "Mercedes Benz Sprinter",
+            "lenkerberechtigung": "B",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 3,
+            "treibstoff": "Diesel",
+            "nutzlast": 0,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": false,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "PKW Kugelkopf",
+            "lastUpdate": "2022-01-27T09:56:53.439Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 12,
+        "fields": {
+            "kuerzel": "F2011",
+            "name": "Gemeinde - Radlader",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "Komatsu WA 100 M",
+            "lenkerberechtigung": "F",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 1,
+            "treibstoff": "Diesel",
+            "nutzlast": 0,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": false,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "",
+            "lastUpdate": "2022-01-27T10:00:11.896Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 14,
+        "fields": {
+            "kuerzel": "F2012",
+            "name": "Gemeinde - Mini Bagger 1,5 t",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "CAT 301-7D",
+            "lenkerberechtigung": "F",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 1,
+            "treibstoff": "Diesel",
+            "nutzlast": 0,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": false,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "",
+            "lastUpdate": "2022-01-27T20:01:25.288Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 15,
+        "fields": {
+            "kuerzel": "F2013",
+            "name": "Gemeidne - Feldküche Anhänger",
+            "fahrzeug": false,
+            "anhaenger": true,
+            "type": "Kärcher TFK 250",
+            "lenkerberechtigung": "",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 0,
+            "treibstoff": "Diesel",
+            "nutzlast": 0,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": false,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "LKW Rockinger",
+            "lastUpdate": "2022-01-27T20:05:54.828Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 16,
+        "fields": {
+            "kuerzel": "F2014",
+            "name": "Gemeinde - PKW Anhänger",
+            "fahrzeug": false,
+            "anhaenger": true,
+            "type": "Pongratz LH2600",
+            "lenkerberechtigung": "E",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 0,
+            "treibstoff": "",
+            "nutzlast": 2310,
+            "ladebordwand": true,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": false,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "PKW Kugelkopf",
+            "lastUpdate": "2022-01-27T20:14:11.756Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 17,
+        "fields": {
+            "kuerzel": "F2015",
+            "name": "Gemeinde - Stapler 1 (groß)",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "Mitsubishi FD25",
+            "lenkerberechtigung": "",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 0,
+            "treibstoff": "Diesel",
+            "nutzlast": 3500,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": false,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "",
+            "lastUpdate": "2022-01-27T20:17:32.731Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 18,
+        "fields": {
+            "kuerzel": "F2016",
+            "name": "Gemeinde - Stapler 2 (klein)",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "Mitsubishi FD25K",
+            "lenkerberechtigung": "",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 0,
+            "treibstoff": "Diesel",
+            "nutzlast": 0,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": false,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "",
+            "lastUpdate": "2022-01-27T20:52:49.493Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 19,
+        "fields": {
+            "kuerzel": "F2017",
+            "name": "Gemeinde - Dumper (Japaner)",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "Wacker Neuson CA0023q",
+            "lenkerberechtigung": "F",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 0,
+            "treibstoff": "Diesel",
+            "nutzlast": 0,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": false,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "LKW Bolzenmaul",
+            "lastUpdate": "2022-01-27T20:57:52.466Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 20,
+        "fields": {
+            "kuerzel": "F2018",
+            "name": "Gemeinde - Anhänger (Landwirtschaft)",
+            "fahrzeug": false,
+            "anhaenger": true,
+            "type": "Fuhrmann (2 achsig)",
+            "lenkerberechtigung": "E",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 0,
+            "treibstoff": "",
+            "nutzlast": 4500,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "",
+            "wassertankAbnehmbar": false,
+            "geschlossenerAufbau": false,
+            "wechselaufbau": "",
+            "anhaengervorrichtung": "LKW - Deichsel",
+            "lastUpdate": "2022-01-27T21:01:14.823Z"
+        }
+    },
+    {
+        "model": "core.fahrzeug",
+        "pk": 21,
+        "fields": {
+            "kuerzel": "F2019",
+            "name": "Gemeinde - Multifunktionsfahrzeug (Kehrmaschine)",
+            "fahrzeug": true,
+            "anhaenger": false,
+            "type": "Hako Citymaster 600",
+            "lenkerberechtigung": "B",
+            "stationierung": "Wirtschaftshof",
+            "personenkapazitaet": 1,
+            "treibstoff": "Diesel",
+            "nutzlast": 0,
+            "ladebordwand": false,
+            "ladekran": false,
+            "wassertank": "1000",
+            "wassertankAbnehmbar": true,
+            "geschlossenerAufbau": false,
+            "wechselaufbau": "Schmutzbehälter (Kehrmaschine)\nWassertank (gießen)",
+            "anhaengervorrichtung": "",
+            "lastUpdate": "2022-02-03T14:16:06.933Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 18,
+        "fields": {
+            "fahrzeug": 3,
+            "file": "fahrzeugfotos/19780487_865874426894382_8687846982220498836_o.jpg",
+            "lastUpdate": "2022-01-26T16:21:25.716Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 19,
+        "fields": {
+            "fahrzeug": 4,
+            "file": "fahrzeugfotos/27173251_974889969326160_3682696316673397025_o.jpg",
+            "lastUpdate": "2022-01-26T16:22:14.610Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 20,
+        "fields": {
+            "fahrzeug": 2,
+            "file": "fahrzeugfotos/21366947_898541993627625_688674204429949766_o.jpg",
+            "lastUpdate": "2022-01-26T16:33:52.448Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 21,
+        "fields": {
+            "fahrzeug": 5,
+            "file": "fahrzeugfotos/69175333_1390588847756268_6504685861932630016_n.jpg",
+            "lastUpdate": "2022-01-26T16:34:27.278Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 22,
+        "fields": {
+            "fahrzeug": 6,
+            "file": "fahrzeugfotos/Bild1.jpg",
+            "lastUpdate": "2022-01-26T16:39:50.921Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 23,
+        "fields": {
+            "fahrzeug": 7,
+            "file": "fahrzeugfotos/Bus1.jpg",
+            "lastUpdate": "2022-01-27T09:32:42.648Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 24,
+        "fields": {
+            "fahrzeug": 8,
+            "file": "fahrzeugfotos/Bus2.jpg",
+            "lastUpdate": "2022-01-27T09:40:08.827Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 25,
+        "fields": {
+            "fahrzeug": 9,
+            "file": "fahrzeugfotos/unimog.jpg",
+            "lastUpdate": "2022-01-27T09:45:52.738Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 27,
+        "fields": {
+            "fahrzeug": 10,
+            "file": "fahrzeugfotos/pritsche1.jpg",
+            "lastUpdate": "2022-01-27T09:53:30.124Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 28,
+        "fields": {
+            "fahrzeug": 11,
+            "file": "fahrzeugfotos/pritsche2.jpg",
+            "lastUpdate": "2022-01-27T09:58:29.849Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 29,
+        "fields": {
+            "fahrzeug": 12,
+            "file": "fahrzeugfotos/radlader.jpg",
+            "lastUpdate": "2022-01-27T10:02:35.098Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 30,
+        "fields": {
+            "fahrzeug": 14,
+            "file": "fahrzeugfotos/minibagger-301.7-d-caterpillar8.jpg",
+            "lastUpdate": "2022-01-27T20:03:22.936Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 31,
+        "fields": {
+            "fahrzeug": 15,
+            "file": "fahrzeugfotos/Feldküche.jpg",
+            "lastUpdate": "2022-01-27T20:06:28.973Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 32,
+        "fields": {
+            "fahrzeug": 16,
+            "file": "fahrzeugfotos/13083-lh-2600-16-t-al.png",
+            "lastUpdate": "2022-01-27T20:14:35.222Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 33,
+        "fields": {
+            "fahrzeug": 17,
+            "file": "fahrzeugfotos/Bild7.jpg",
+            "lastUpdate": "2022-01-27T20:55:26.512Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 34,
+        "fields": {
+            "fahrzeug": 18,
+            "file": "fahrzeugfotos/1544_7617061131904.jpg",
+            "lastUpdate": "2022-01-27T20:56:25.181Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 35,
+        "fields": {
+            "fahrzeug": 19,
+            "file": "fahrzeugfotos/csm_WN_PAL_image_DW90_HLe_700x466_0f8ec0278b.png",
+            "lastUpdate": "2022-01-27T20:59:48.921Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 36,
+        "fields": {
+            "fahrzeug": 20,
+            "file": "fahrzeugfotos/FF15000_main.jpg",
+            "lastUpdate": "2022-01-27T21:03:31.400Z"
+        }
+    },
+    {
+        "model": "core.fahrzeugfoto",
+        "pk": 37,
+        "fields": {
+            "fahrzeug": 21,
+            "file": "fahrzeugfotos/kompaktkehrmaschinen-citymaster-600-hako1.png",
+            "lastUpdate": "2022-02-03T14:17:09.894Z"
+        }
+    },
+    {
+        "model": "core.kmaterial",
+        "pk": 2,
+        "fields": {
+            "artikel": "Heizgeräte",
+            "bemerkung": "Diesel mit 958l Tank",
+            "menge": 2,
+            "stationierungsort": "Wirtschaftshof"
+        }
+    },
+    {
+        "model": "core.kmaterial",
+        "pk": 3,
+        "fields": {
+            "artikel": "Feldbetten",
+            "bemerkung": "",
+            "menge": 300,
+            "stationierungsort": "Wirtschaftshof"
+        }
+    },
+    {
+        "model": "core.kmaterial",
+        "pk": 4,
+        "fields": {
+            "artikel": "Decken",
+            "bemerkung": "",
+            "menge": 300,
+            "stationierungsort": "Wirtschaftshof"
+        }
+    },
+    {
+        "model": "core.kmaterial",
+        "pk": 5,
+        "fields": {
+            "artikel": "Sandsäcke",
+            "bemerkung": "",
+            "menge": 250,
+            "stationierungsort": "Feuerwehr"
+        }
+    },
+    {
+        "model": "core.kmaterial",
+        "pk": 6,
+        "fields": {
+            "artikel": "Schutzanzüge",
+            "bemerkung": "",
+            "menge": 50,
+            "stationierungsort": "Feuerwehr & Wirtschaftshof"
+        }
+    },
+    {
+        "model": "core.kmaterial",
+        "pk": 7,
+        "fields": {
+            "artikel": "Masken FFP2",
+            "bemerkung": "",
+            "menge": 100,
+            "stationierungsort": "Feuerwehr & Wirtschaftshof"
+        }
+    },
+    {
+        "model": "core.kmaterial",
+        "pk": 8,
+        "fields": {
+            "artikel": "Einweghandschuhe",
+            "bemerkung": "",
+            "menge": 1000,
+            "stationierungsort": "Feuerwehr & Wirtschaftshof"
+        }
+    },
+    {
+        "model": "core.kmaterial",
+        "pk": 9,
+        "fields": {
+            "artikel": "Dosenbrot",
+            "bemerkung": "",
+            "menge": 0,
+            "stationierungsort": ""
+        }
+    },
+    {
+        "model": "core.kmaterial",
+        "pk": 10,
+        "fields": {
+            "artikel": "Trinkwasser",
+            "bemerkung": "Paletten",
+            "menge": 3,
+            "stationierungsort": "Wirtschaftshof"
+        }
+    },
+    {
+        "model": "core.kmaterial",
+        "pk": 11,
+        "fields": {
+            "artikel": "Zelte",
+            "bemerkung": "9/12/30 m²",
+            "menge": 4,
+            "stationierungsort": ""
+        }
+    }
+]
