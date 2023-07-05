@@ -27,21 +27,30 @@ DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 
 
 ALLOWED_HOSTS = [
-    'demo.katplan.app',
+    'katplantest.michael-web.at',
+    'katplan.app',
+    'www.katplan.app',
     'test.katplan.app',
-    'localhost'
+    '127.0.0.1',
+    'localhost',
+    '185.164.4.193',
+    'vs1.michael-web.at'
 ]
 
 CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ALLOWED_ORIGINS = [
-    'https://demo.katplan.app',
+    'https://katplantest.michael-web.at',
+    'https://katplan.app',
+    'https://www.katplan.app',
     'https://test.katplan.app',
     'http://localhost:4200',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://demo.katplan.app',
+    'https://katplantest.michael-web.at',
+    'https://katplan.app',
+    'https://www.katplan.app',
     'https://test.katplan.app',
     'http://localhost:4200',
 ]
@@ -81,7 +90,7 @@ ROOT_URLCONF = 'app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates/')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -146,10 +155,7 @@ USE_TZ = True
 
 # 0.0.0.0:2432/static/
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, "static")
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")

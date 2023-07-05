@@ -59,15 +59,10 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     USERNAME_FIELD = 'username'
 
-    class Meta: 
-        verbose_name = ("Benutzer")
-        verbose_name_plural = ("Benutzer")
-        ordering = ('-username',)
-
 
 class Modul(models.Model):
     """Modul object"""
-    bezeichnung = models.CharField(max_length=255, help_text='Help Text')
+    bezeichnung = models.CharField(max_length=255)
     kuerzel = models.CharField(max_length=5)
     icon = models.CharField(max_length=50)
     reihenfolge = models.IntegerField(null=True)
