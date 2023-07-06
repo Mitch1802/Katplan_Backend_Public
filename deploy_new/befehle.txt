@@ -1,0 +1,21 @@
+$ python -m venv venv
+$ echo venv/ >> .gitignore
+$ source venv/bin/activate
+
+$ pip install -r requirements.txt
+
+$ python manage.py makemigrations
+$ python manage.py migrate
+
+$ python manage.py check --deploy
+
+$ chmod 755 start-server.sh
+
+$ mkdir -p .pip_cache
+$ docker build -t katplan-image .
+
+$ docker run -it -p 1111:80 \
+     -e DJANGO_SUPERUSER_USERNAME=admin \
+     -e DJANGO_SUPERUSER_PASSWORD=sekret1 \
+     -e DJANGO_SUPERUSER_EMAIL=admin@example.com \
+     katplan-image
