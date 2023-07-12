@@ -1,0 +1,3 @@
+# Docker
+
+docker run --name katplan_2432 -p 2432:80 -it mitch122/katplan:latest
