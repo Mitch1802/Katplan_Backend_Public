@@ -23,3 +23,7 @@ docker run -it -p 1111:80 \
      -e DJANGO_SUPERUSER_PASSWORD=sekret1 \
      -e DJANGO_SUPERUSER_EMAIL=admin@example.com \
      katplan-image
+
+
+
+git clone https://github.com/Mitch1802/Katplan_Backend_Public.git /opt/app/katplan/
