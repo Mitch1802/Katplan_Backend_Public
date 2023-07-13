@@ -1,22 +1,24 @@
 Doks: https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application#h-building-and-running-the-container
 
-$ python -m venv venv
-$ echo venv/ >> .gitignore
-$ source venv/bin/activate
+python -m venv venv
+echo venv/ >> .gitignore
+source venv/bin/activate
 
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 
-$ python manage.py makemigrations
-$ python manage.py migrate
+python manage.py wait_for_db
+python manage.py makemigrations
+python manage.py migrate
+python manage.py collectstatic --noinput
 
-$ python manage.py check --deploy
+python manage.py check --deploy
 
-$ chmod 755 start-server.sh
+chmod 755 start-server.sh
 
-$ mkdir -p .pip_cache
-$ docker build -t katplan-image .
+mkdir -p .pip_cache
+docker build -t katplan-image .
 
-$ docker run -it -p 1111:80 \
+docker run -it -p 1111:80 \
      -e DJANGO_SUPERUSER_USERNAME=admin \
      -e DJANGO_SUPERUSER_PASSWORD=sekret1 \
      -e DJANGO_SUPERUSER_EMAIL=admin@example.com \
