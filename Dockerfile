@@ -2,6 +2,7 @@ FROM python:3.9-buster
 
 # install nginx
 RUN apt-get update && apt-get install nginx vim -y --no-install-recommends
+RUN pip install gunicorn
 RUN rm -r /etc/nginx/sites-available/default
 COPY nginx.default /etc/nginx/sites-available/default
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
@@ -19,6 +20,6 @@ RUN pip install -r requirements.txt --cache-dir /opt/app/pip_cache
 RUN chown -R www-data:www-data /opt/app
 
 # start server
-EXPOSE 80
+EXPOSE 8000
 STOPSIGNAL SIGTERM
-CMD ["/opt/app/start-server.sh"]
+ENTRYPOINT ["/opt/app/start-server.sh"]

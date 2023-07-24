@@ -1,8 +1,13 @@
 Doks: https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application#h-building-and-running-the-container
 
+mkdir /opt/app/katplan
+git clone pfadzugit /opt/app/katplan
+
 python -m venv venv
 echo venv/ >> .gitignore
 source venv/bin/activate
+
+cd katplan
 
 pip install -r requirements.txt
 
@@ -12,6 +17,9 @@ python manage.py migrate
 python manage.py collectstatic --noinput
 
 python manage.py check --deploy
+
+cd ..
+deactivate
 
 chmod 755 start-server.sh
 
