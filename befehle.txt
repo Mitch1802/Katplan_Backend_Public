@@ -1,0 +1,37 @@
+Doks: https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application#h-building-and-running-the-container
+
+mkdir /opt/app/katplan
+git clone pfadzugit /opt/app/katplan
+
+python -m venv venv
+echo venv/ >> .gitignore
+source venv/bin/activate
+
+cd katplan
+
+pip install -r requirements.txt
+
+python manage.py wait_for_db
+python manage.py makemigrations
+python manage.py migrate
+python manage.py collectstatic --noinput
+
+python manage.py check --deploy
+
+cd ..
+deactivate
+
+chmod 755 start-server.sh
+
+mkdir -p .pip_cache
+docker build -t katplan-image .
+
+docker run -it -p 1111:80 \
+     -e DJANGO_SUPERUSER_USERNAME=admin \
+     -e DJANGO_SUPERUSER_PASSWORD=sekret1 \
+     -e DJANGO_SUPERUSER_EMAIL=admin@example.com \
+     katplan-image
+
+
+
+git clone https://github.com/Mitch1802/Katplan_Backend_Public.git /opt/app/katplan/
